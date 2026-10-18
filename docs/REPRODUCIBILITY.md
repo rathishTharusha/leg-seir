@@ -13,7 +13,7 @@ python scripts/build_figures.py
 python -m unittest discover -s tests -v
 ```
 
-`artifacts.lock.json` pins the Hugging Face commit and every downloaded byte hash. The CPU verification covers the original recorded run. It is distinct from training again. See `results/environment.json` and `pip_freeze.txt` for the original Kaggle GPU runtime; the CPU requirements describe the tested release-verification environment. Runtime differences may change training weights.
+`artifacts.lock.json` pins the Hugging Face commit and every downloaded byte hash. The CPU verification covers the original recorded run. It is distinct from training again. See `results/environment.json` and the original `pip_freeze.txt` inside `evaluation_outputs.zip` for the Kaggle GPU runtime; the CPU requirements describe the tested release-verification environment. Runtime differences may change training weights. The complete platform package inventory is preserved unchanged in that archive; it includes preinstalled software unrelated to this experiment. Repository requirements list the dependencies needed for training or verification.
 
 ## Train from the public audited input tables
 

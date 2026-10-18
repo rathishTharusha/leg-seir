@@ -42,3 +42,6 @@ paper/*.tex
 paper/*.bib
 paper/figures/
 paper/tables/
+
+# Complete platform inventory remains in the immutable evidence archive.
+results/pip_freeze.txt

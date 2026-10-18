@@ -1,4 +1,4 @@
-# Tested CPU verification runtime. Original GPU runtime: results/pip_freeze.txt.
+# Tested CPU verification runtime. Original GPU runtime: the frozen experiment archive (pip_freeze.txt).
 --extra-index-url https://download.pytorch.org/whl/cpu
 numpy==2.4.6
 pandas==3.0.5

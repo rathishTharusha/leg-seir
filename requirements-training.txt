@@ -1,6 +1,6 @@
 # Audited-input training dependencies from the recorded Kaggle runtime.
 # Keep the platform's CUDA-enabled PyTorch; do NOT install CPU requirements on Kaggle.
-# Recorded GPU PyTorch: 2.11.0+cu128, Python 3.13.15; see results/pip_freeze.txt.
+# Recorded GPU PyTorch: 2.11.0+cu128, Python 3.13.15; see the frozen experiment archive (pip_freeze.txt).
 numpy==2.1.3
 pandas==2.3.3
 scipy==1.16.3
