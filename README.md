@@ -6,6 +6,8 @@ A compact forecaster coupling historical lag selection to neural graph messages 
 
 [Paper](paper/LEG_SEIR_manuscript.pdf) · [Supplement](paper/LEG_SEIR_supplement.pdf) · [Data and evidence](https://huggingface.co/datasets/rathishTharusha/leg-seir) · [Reproduce](docs/REPRODUCIBILITY.md) · [Method](docs/METHOD.md)
 
+**Lecturer-review status:** code and recorded evidence are ready. The included manuscript is provisional while the team's revised wording and author list are incorporated. See [review guide](REVIEW_GUIDE.md) and [function-level code guide](docs/CODE_GUIDE.md).
+
 ## Recorded result
 
 | Method | 2026 RMSE, mean over five seeds |
