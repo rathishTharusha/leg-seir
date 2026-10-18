@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-10-18T15:23:54.081926+00:00",
+  "original_experiment": {
+    "verified": true,
+    "smoke": false,
+    "fits": 265,
+    "code_hash": "3ea0794104f30993d7b0994c17e76e95435def0ad11305cfa535c91828009ed1",
+    "hashes_checked": 915,
+    "cpu_parity": true,
+    "chronology_and_selection": true
+  },
+  "new_loader_smoke": {
+    "description": "Two-epoch one-seed CPU execution check, NOT paper results",
+    "status": "passed",
+    "fits": 45,
+    "code_hash": "e2bf83b35a48fe019fe3d74bf979e6a19eaaa30524bcf8e230b8cb7a921d675f",
+    "data_hash": "28741bf5fb11f31adbdd13cd3d94bcf577312b24de416c2d6b342a4c4d2ae3b9",
+    "note": "Notebook cell IDs added after execution; code-cell contents and identity are unchanged."
+  },
+  "public_input_parity": "12 input/provenance files match original experiment; see release_input_parity.json",
+  "standalone_scientific_cells": "identical to frozen notebook; source identity unit test passed",
+  "scientific_unit_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "editable_package_install": "passed on Python 3.11 Windows CPU",
+  "results_gallery": "executed; 9 publication figures regenerated; PNG and numeric CSV outputs unchanged",
+  "paper_layout": {
+    "main_pages": 6,
+    "supplement_pages": 11,
+    "overfull_boxes": 0,
+    "visual_review": "all pages inspected in contact sheet",
+    "status": "provisional pending team revised wording/authors"
+  },
+  "public_downloads": {
+    "audited_input_and_metadata_files": 14,
+    "large_archive": "Uploaded to HF and GitHub; original bytes and GitHub server SHA256 agree. Full download round trip not yet completed on this intermittent connection.",
+    "dataset_revision": "9c554d043563cb48d26aa047fefe58bea91597e6"
+  },
+  "not_performed": [
+    "Fresh full neural retraining",
+    "New GPU execution of the audited-input notebook",
+    "Reacquisition of all 714 original source files",
+    "External-paper experiments beyond the historical scope register"
+  ]
+}
