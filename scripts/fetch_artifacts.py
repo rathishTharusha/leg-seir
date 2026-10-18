@@ -9,10 +9,15 @@ def fetch(data_only=False):
  for item in sorted(lock['files'],key=lambda x:x['path'].endswith('evaluation_outputs.zip')):
   name=item['path']
   if data_only and not (name.startswith('data/') or name.startswith('provenance/')): continue
+  dst=ROOT/'artifacts/snapshot'/name
+  if dst.is_file() and hashlib.sha256(dst.read_bytes()).hexdigest()==item['sha256']:
+   if name=='evidence/evaluation_outputs.zip': shutil.copy2(dst,ROOT/'artifacts/evaluation_outputs.zip')
+   print('Verified existing:',name)
+   continue
   if name=='evidence/evaluation_outputs.zip':
    src=ROOT/'artifacts/.evaluation_download';src.parent.mkdir(parents=True,exist_ok=True)
-   urls=[f"https://huggingface.co/datasets/{lock['repo_id']}/resolve/{lock['revision']}/{name}",
-         'https://github.com/rathishTharusha/leg-seir/releases/download/v0.1.0/evaluation_outputs.zip']
+   urls=['https://github.com/rathishTharusha/leg-seir/releases/download/v0.1.0/evaluation_outputs.zip',
+         f"https://huggingface.co/datasets/{lock['repo_id']}/resolve/{lock['revision']}/{name}"]
    for url in urls:
     try:
      with urllib.request.urlopen(url,timeout=30) as response,src.open('wb') as output: shutil.copyfileobj(response,output)
@@ -23,8 +28,9 @@ def fetch(data_only=False):
   else:
    src=Path(hf_hub_download(lock['repo_id'],name,repo_type='dataset',revision=lock['revision']))
   if hashlib.sha256(src.read_bytes()).hexdigest()!=item['sha256']: raise RuntimeError('Hash mismatch: '+name)
-  dst=ROOT/'artifacts/snapshot'/name;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dst)
+  dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dst)
   if name=='evidence/evaluation_outputs.zip': shutil.copy2(src,ROOT/'artifacts/evaluation_outputs.zip')
+  print('Downloaded and verified:',name)
  print('Verified pinned snapshot:',lock['repo_id'],lock['revision'])
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--data-only',action='store_true');a=p.parse_args();fetch(a.data_only)
