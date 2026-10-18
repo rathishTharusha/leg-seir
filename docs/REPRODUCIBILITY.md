@@ -31,7 +31,7 @@ Readable scientific fragments are extracted from the frozen notebook under `src/
 
 ## Paper and figures
 
-`scripts/build_figures.py` regenerates all nine publication figures from verified saved outputs. `notebooks/LEG_SEIR_results_gallery.ipynb` is an inspection notebook. It does not train models. The paper source is `paper/`; compiled PDFs and a self-contained Overleaf ZIP accompany the lecturer handoff. All 26 main references and 50 supplementary references are retained; datasets and code are linked in footnotes.
+`scripts/build_figures.py` regenerates all nine publication figures from verified saved outputs. `notebooks/LEG_SEIR_results_gallery.ipynb` is an inspection notebook. It does not train models. Compiled manuscript and supplementary PDFs are in `paper/`. The team maintains the LaTeX/Overleaf project separately; sources and the Overleaf ZIP are excluded from the current public repository and release assets. Bibliographic research records remain under `references/`. The team-supplied manuscript PDF is preserved as received; its wording about dataset release predates the public Hugging Face release linked in the README.
 
 ## Important distinctions
 

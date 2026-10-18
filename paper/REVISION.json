@@ -1,0 +1,9 @@
+{
+  "source": "Team-supplied manuscript revision, 18 October 2026",
+  "pages": 7,
+  "sha256": "cafd508e66936d23d4333766ca8b3b247126b6ef1f03aefaddbafbb2b3349584",
+  "published_pdf": "paper/LEG_SEIR_manuscript.pdf",
+  "content_changed": false,
+  "experimental_evidence_changed": false,
+  "latex_distribution": "Maintained separately on team Overleaf; excluded from current Git tree and release assets."
+}

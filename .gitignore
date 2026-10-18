@@ -36,3 +36,9 @@ paper/supplement.pdf
 *.bbl
 *.out
 
+
+# Manuscript working sources are maintained separately on Overleaf.
+paper/*.tex
+paper/*.bib
+paper/figures/
+paper/tables/

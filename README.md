@@ -6,7 +6,7 @@ A compact forecaster coupling historical lag selection to neural graph messages 
 
 [Paper](paper/LEG_SEIR_manuscript.pdf) · [Supplement](paper/LEG_SEIR_supplement.pdf) · [Data and evidence](https://huggingface.co/datasets/rathishTharusha/leg-seir) · [Reproduce](docs/REPRODUCIBILITY.md) · [Method](docs/METHOD.md)
 
-**Lecturer-review status:** code and recorded evidence are ready. The included manuscript is provisional while the team's revised wording and author list are incorporated. See [review guide](REVIEW_GUIDE.md) and [function-level code guide](docs/CODE_GUIDE.md).
+**Lecturer-review status:** the team-revised manuscript, author list, code and recorded evidence are available for review. See [review guide](REVIEW_GUIDE.md) and [function-level code guide](docs/CODE_GUIDE.md).
 
 ## Recorded result
 
@@ -48,7 +48,7 @@ The [original full-source notebook](experiments/frozen/Dengue_final_study.ipynb)
 - `scripts/`: pinned retrieval, verification, source retrieval and figure generation.
 - `results/`: compact scores, selection records, runtime and CPU verification.
 - `figures/publication/`: nine publication figures and numerical inputs.
-- `paper/`: six-page IEEE manuscript, supplement, bibliography and Overleaf bundle.
+- `paper/`: team-revised seven-page IEEE manuscript and technical supplement (compiled PDFs only).
 - `tests/`: scientific conservation, graph/mixing contracts and source identity.
 
 The exact run contains 180 development + 75 primary final + 10 LR-sensitivity neural fits. Three ridge fits are separate. The archived verifier checks 915 file hashes, CPU checkpoint parity, reconstructed metrics, targets, scalers, chronology and development-only learning-rate selection.
@@ -59,4 +59,4 @@ No claim is made of first-ever graph–compartment coupling, biological identifi
 
 ## Licensing and citation
 
-Original team code is MIT. Dataset/provider material has separate terms; MIT does not relicense the data or manuscript. Related papers are referenced by bibliography rather than redistributed as PDFs. Citation metadata uses the contributor group until the team confirms its final author list. This is a lecturer-review research release, not a venue-ready authorship declaration.
+Original team code is MIT. Dataset/provider material has separate terms; MIT does not relicense the data or manuscript. Related papers are referenced by bibliography rather than redistributed as PDFs. Citation metadata follows the author list supplied in the revised manuscript. LaTeX sources and the Overleaf project are maintained separately by the team and are not distributed in the current repository. Venue-specific formatting remains to be confirmed.

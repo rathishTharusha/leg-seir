@@ -3,7 +3,15 @@ message: "Please cite the accompanying manuscript and the exact code/data releas
 title: "LEG-SEIR: Lagged Exposure for Graph-Based Dengue Forecasting"
 type: software
 authors:
-  - name: "LEG-SEIR contributors"
+  - name: "Tharusha Perera"
+  - name: "Janith Mahanama"
+  - name: "Praveen De Silva"
+  - name: "Maleesha Kumarasinghe"
+  - name: "Bimsara Udurawana"
+  - name: "Praveen Nawarathna"
+  - name: "Sandani Fernando"
+  - name: "Vasanthan Abishan"
+  - name: "Sandareka Wickramanayake"
 version: 0.1.0
 date-released: 2026-10-18
 repository-code: "https://github.com/rathishTharusha/leg-seir"
