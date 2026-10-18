@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "public_input_to_original_evidence_comparison": [
+    {
+      "path": "data/cases_25.csv",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "data/cases_25_printed_repeat_sensitivity.csv",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "data/cases_26.csv",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "data/population_audit.json",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/environment.json",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/evaluation_plan.json",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/graph_audit.json",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/independent_verification.json",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/learning_rate_freeze.json",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/pip_freeze.txt",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/source_manifest.json",
+      "matches_recorded_experiment": true
+    },
+    {
+      "path": "provenance/target_ledger.json",
+      "matches_recorded_experiment": true
+    }
+  ],
+  "note": "Byte-identical inputs; independent verification reports compared semantically."
+}

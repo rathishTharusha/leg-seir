@@ -5,7 +5,9 @@ ROOT=Path(__file__).resolve().parents[1]
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--manifest',type=Path,default=ROOT/'artifacts/snapshot/provenance/source_manifest.json');p.add_argument('--destination',type=Path,default=ROOT/'sources');a=p.parse_args()
  failures=[]
- for item in json.loads(a.manifest.read_text()):
+ manifest=json.loads(a.manifest.read_text())
+ for item in manifest:
+  if item.get('status')=='failed': continue
   relative=Path(item['path'])
   if relative.is_absolute() or '..' in relative.parts: raise ValueError('Unsafe manifest path')
   dst=a.destination/relative
@@ -18,5 +20,6 @@ if __name__=='__main__':
   except Exception as e: failures.append({'path':item['path'],'url':item['url'],'error':str(e)})
  a.destination.mkdir(parents=True,exist_ok=True)
  (a.destination/'retrieval_failures.json').write_text(json.dumps(failures,indent=2))
+ (a.destination/'manifest.json').write_text(json.dumps(manifest,indent=2))
  print('Unavailable or changed original files:',len(failures))
  if failures: raise SystemExit(1)

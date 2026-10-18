@@ -21,6 +21,8 @@ Run `notebooks/LEG_SEIR_train_from_audited_data.ipynb` in a fresh GPU kernel, wi
 
 The original immutable full-study notebook remains under `experiments/frozen/`. It parses the original report PDFs and requires the original source snapshot. `scripts/retrieve_original_sources.py` retrieves the publicly referenced source URLs with strict hashes; some providers may change or remove old files. That failure is explicit. The raw third-party snapshot is retained privately by the research team and is not covered by MIT.
 
+For that original workflow, first fetch the public artifact metadata, run `python scripts/retrieve_original_sources.py` to populate `sources/` and its `manifest.json`, then run `python scripts/train_original.py` from a fresh checkout. The wrapper supplies the original notebook path and repository working directory without changing its code. It refuses to overwrite an existing `evaluation_outputs/` run. Reacquiring 714 original files can be slow; this source-retrieval workflow was not rerun end to end for the lecturer release. The audited-input notebook avoids those PDF/geography dependencies and is the recommended public training path.
+
 ## Model source
 
 Readable scientific fragments are extracted from the frozen notebook under `src/leg_seir/_frozen/`. They intentionally use a shared namespace, matching the evaluated implementation. `leg_seir.build_candidate(config, fold, population)` supplies that namespace and preserves checkpoint parameter names. The original notebook, not an adapted external architecture, defines the recorded experiment.
