@@ -1,7 +1,7 @@
 # Exact reproduction workspace
 
 Runs the **authors' own code** to obtain the **authors' own numbers**. Nothing
-here reimplements a model, a metric, a training loop or a data pipeline — that is
+here reimplements a model, a metric, a training loop or a data pipeline - that is
 what `crosscheck/` is for, and the two workspaces answer different questions:
 
 | Workspace | Question |
@@ -11,7 +11,7 @@ what `crosscheck/` is for, and the two workspaces answer different questions:
 
 **Read [`REPRODUCIBILITY_MATRIX.md`](REPRODUCIBILITY_MATRIX.md) first.** It records,
 with evidence, exactly which published numbers can be reproduced and which
-cannot. The headline: of Weng et al.'s 20 Table I rows, **5 are reproducible** —
+cannot. The headline: of Weng et al.'s 20 Table I rows, **5 are reproducible** -
 but they are the five GNN rows, which are the paper's actual contribution.
 
 ---
@@ -28,8 +28,8 @@ but they are the five GNN rows, which are the paper's actual contribution.
 | `seir-model-reproduction-gopalakrishnan` | Gopalakrishnan SEIR | 6 qualitative claims |
 | `seir-sei-sensitivity-reproduction-phaijoo-gurung` | Phaijoo & Gurung Table 1 | 9 sensitivity indices |
 
-Targets come from `Models/results.txt` in the authors' repository — their own raw
-output, matching Table I to the decimal — not from the rounded printed table.
+Targets come from `Models/results.txt` in the authors' repository - their own raw
+output, matching Table I to the decimal - not from the rounded printed table.
 
 There is **no DengueGNN kernel**: the article publishes no code and does not
 specify which OpenDengue subset it used, so there is nothing to run that would
@@ -57,7 +57,7 @@ run_dcrnn    OK
 run_aagcn    OK
 ```
 
-**2. Set up the Kaggle CLI** — see [`kaggle/README.md`](kaggle/README.md). You
+**2. Set up the Kaggle CLI** - see [`kaggle/README.md`](kaggle/README.md). You
 must create your own API token; that step cannot be done for you.
 
 ```bash
@@ -66,7 +66,7 @@ python reproduction/kaggle/setup_kaggle.py --init-metadata
 ```
 
 **3. Push one kernel at a time.** Kaggle caps a session at 12 hours and each
-architecture takes roughly 1–4 hours on CPU:
+architecture takes roughly 1-4 hours on CPU:
 
 ```bash
 cd reproduction/kaggle/kernels/weng-2024-exact-reproduction-stgat
@@ -81,7 +81,7 @@ kaggle kernels output <your-username>/weng-2024-exact-reproduction-stgat -p ../.
 
 ## Two forced deviations
 
-The authors' `requirements.txt` cannot be honoured as written — it is broken in
+The authors' `requirements.txt` cannot be honoured as written - it is broken in
 two independent ways, both documented with the exact error in
 [`REPRODUCIBILITY_MATRIX.md`](REPRODUCIBILITY_MATRIX.md):
 
@@ -104,7 +104,7 @@ reproduction/
 ├── README.md                      this file
 ├── REPRODUCIBILITY_MATRIX.md      what can and cannot be reproduced, with evidence
 ├── verify_local.py                build the pinned stack and smoke-test it
-├── _build/                        notebook cell sources — EDIT THESE
+├── _build/                        notebook cell sources - EDIT THESE
 │   ├── gen_kernels.py
 │   ├── cells_weng.py
 │   └── cells_seir.py
@@ -123,7 +123,7 @@ Notebooks are **generated**, same convention as `notebooks/_build` and
 cd reproduction/_build && python gen_kernels.py
 ```
 
-Edit `cells_*.py`, never the `.ipynb` — regeneration overwrites them.
+Edit `cells_*.py`, never the `.ipynb` - regeneration overwrites them.
 `tools/check_notebooks.py` validates every generated cell parses as Python.
 
 ---
@@ -131,8 +131,8 @@ Edit `cells_*.py`, never the `.ipynb` — regeneration overwrites them.
 ## What a successful reproduction would and would not establish
 
 It would confirm the authors ran what they said they ran. It would **not**
-validate the protocol behind those numbers: `crosscheck/FINDINGS.md` F1.1–F1.6
-documents five separate issues with how Table I is computed — most importantly
+validate the protocol behind those numbers: `crosscheck/FINDINGS.md` F1.1-F1.6
+documents five separate issues with how Table I is computed - most importantly
 that its "Cross Validated" column is measured on data the model trained on, and
 that naive persistence beats every model in that column.
 

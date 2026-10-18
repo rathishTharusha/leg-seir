@@ -1,4 +1,4 @@
-# Lecturer review — LEG-SEIR
+# Lecturer review - LEG-SEIR
 
 Read `paper/LEG_SEIR_manuscript.pdf` first, then the supplement for equations, complete controls and reproduction scope. Vector figures and their numerical inputs are in `figures/publication/`. The paper is the team-supplied seven-page IEEE revision dated 18 October 2026, including its author list. The submission venue remains to be confirmed.
 

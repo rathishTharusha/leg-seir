@@ -22,7 +22,7 @@ The lagged `forward` first preserves a local hidden vector. It graph-averages ea
 
 ## Mechanistic functions
 
-`conservative_step` moves nonnegative mass from S to E, E to I and I to R with exponential transition fractions. Each moved quantity is subtracted from one compartment and added to the next. Nonnegative forces keep transitions bounded and conserve total mass, apart from floating-point rounding. It returns the new state and E-to-I onsets. It is a discrete conservative proxy solver, not an explicit mosquito–human epidemic model.
+`conservative_step` moves nonnegative mass from S to E, E to I and I to R with exponential transition fractions. Each moved quantity is subtracted from one compartment and added to the next. Nonnegative forces keep transitions bounded and conserve total mass, apart from floating-point rounding. It returns the new state and E-to-I onsets. It is a discrete conservative proxy solver, not an explicit mosquito-human epidemic model.
 
 `mechanistic_forecast` is the local decoder used by comparator configurations. It initializes proxy states from recent counts and population scaling, transforms neural rate outputs and sums seven daily onsets per horizon.
 

@@ -55,7 +55,7 @@ The exact run contains 180 development + 75 primary final + 10 LR-sensitivity ne
 
 ## Limits and next experiments
 
-No claim is made of first-ever graph–compartment coupling, biological identification, prospective generalization or superiority over external hybrid papers that were not rerun. Isolated lag/import/transition ablations, proxy-constant sensitivity, reporting-policy sensitivity and independent future/external evaluation remain open. The alternative printed-repeat series is not a completed LEG-SEIR robustness result. Negative results and competitive controls remain in the release.
+No claim is made of first-ever graph-compartment coupling, biological identification, prospective generalization or superiority over external hybrid papers that were not rerun. Isolated lag/import/transition ablations, proxy-constant sensitivity, reporting-policy sensitivity and independent future/external evaluation remain open. The alternative printed-repeat series is not a completed LEG-SEIR robustness result. Negative results and competitive controls remain in the release.
 
 ## Licensing and citation
 

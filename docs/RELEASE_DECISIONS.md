@@ -1,4 +1,4 @@
-# Lecturer-review release decisions — 18 October 2026
+# Lecturer-review release decisions - 18 October 2026
 
 - Public named GitHub `rathishTharusha/leg-seir` and Hugging Face dataset `rathishTharusha/leg-seir`; anonymity postponed at the team's request. Publication through these accounts is not anonymous.
 - MIT applies to original team software only. The manuscript and original providers' data/material are not relicensed by the software license.

@@ -6,6 +6,6 @@ Receiver/sender factors define a static learned directed graph: diagonal exclude
 
 The graph and lag weights also aggregate population-scaled raw counts into a historical imported-pressure anchor. Inside a conservative daily SEIR-inspired proxy rollout, exp(-k/7) shifts weight from that observed anchor to simulated neighbouring infectious states. A learned scalar mixes local and imported pressure. Horizon rates are neural outputs; all proxy compartments remain nonnegative and conserve mass.
 
-Four forecasts—persistence, local, graph and mechanistic—are mixed by a learned horizon-specific softmax in standardized log space, then transformed back to nonnegative counts. The full model has 9,519 parameters. Lag weights are receiver-specific, not edge-specific or identified clinical delays. Learned graph edges are predictive dependencies, not measured transmission.
+Four forecasts - persistence, local, graph and mechanistic - are mixed by a learned horizon-specific softmax in standardized log space, then transformed back to nonnegative counts. The full model has 9,519 parameters. Lag weights are receiver-specific, not edge-specific or identified clinical delays. Learned graph edges are predictive dependencies, not measured transmission.
 
 The mathematical definitions, initialization, rate transforms, objective, controls and fixed constants are fully specified in the manuscript and supplement. The code exposes the exact evaluated parameterization rather than claiming to identify clinical SEIR states.

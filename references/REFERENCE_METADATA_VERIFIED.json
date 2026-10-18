@@ -758,7 +758,7 @@
         },
         {
           "key": "pcbi.1012738.ref036",
-          "unstructured": "Dauphin YN, Fan A, Auli M, Grangier D. Language Modeling with Gated Convolutional Networks. In: Doina P, Yee Whye T, editors. Proceedings of the 34th International Conference on Machine Learning; Proceedings of Machine Learning Research: PMLR; 2017. p. 933–41."
+          "unstructured": "Dauphin YN, Fan A, Auli M, Grangier D. Language Modeling with Gated Convolutional Networks. In: Doina P, Yee Whye T, editors. Proceedings of the 34th International Conference on Machine Learning; Proceedings of Machine Learning Research: PMLR; 2017. p. 933-41."
         },
         {
           "issue": "6498",
@@ -1645,7 +1645,7 @@
           "journal-title": "J. Dis. Dyn."
         },
         {
-          "issue": "1–2",
+          "issue": "1-2",
           "key": "10.1016/j.engappai.2025.112764_b35",
           "first-page": "1",
           "article-title": "Vaccination and herd immunity for SIR epidemics",
@@ -1828,7 +1828,7 @@
         {
           "key": "10.1016/j.engappai.2025.112764_b53",
           "doi-asserted-by": "crossref",
-          "unstructured": "Wu, Z., Pan, S., Long, G., Jiang, J., Chang, X., Zhang, C., 2020c. Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks. In: Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. pp. 753–763.",
+          "unstructured": "Wu, Z., Pan, S., Long, G., Jiang, J., Chang, X., Zhang, C., 2020c. Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks. In: Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. pp. 753-763.",
           "DOI": "10.1145/3394486.3403118"
         },
         {
@@ -2215,7 +2215,7 @@
           "volume": "115",
           "author": "Kermack W. O.",
           "year": "1927",
-          "unstructured": "Kermack W. O., McKendrick A. G. (1927). A contribution to the mathematical theory of epidemics. Proceedings of the Royal Society of London. Series A, 115(772), 700–721. https://doi.org/10.1098/rspa.1927.0118",
+          "unstructured": "Kermack W. O., McKendrick A. G. (1927). A contribution to the mathematical theory of epidemics. Proceedings of the Royal Society of London. Series A, 115(772), 700-721. https://doi.org/10.1098/rspa.1927.0118",
           "journal-title": "Proceedings of the Royal Society of London. Series A"
         },
         {
@@ -2247,7 +2247,7 @@
         {
           "key": "e_1_3_3_17_1",
           "doi-asserted-by": "crossref",
-          "unstructured": "Yu B. Yin H. Zhu Z. (2018). Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting. In Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence (IJCAI-18). International Joint Conferences on Artificial Intelligence Organization (pp. 3634–3640). https://doi.org/10.24963/ijcai.2018/505.",
+          "unstructured": "Yu B. Yin H. Zhu Z. (2018). Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting. In Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence (IJCAI-18). International Joint Conferences on Artificial Intelligence Organization (pp. 3634-3640). https://doi.org/10.24963/ijcai.2018/505.",
           "DOI": "10.24963/ijcai.2018/505"
         }
       ],
@@ -2521,7 +2521,7 @@
           "volume": "63",
           "author": "DB Rubin",
           "year": "1976",
-          "unstructured": "Rubin, D. B. Inference and missing data. Biom. 63, 581–592 (1976).",
+          "unstructured": "Rubin, D. B. Inference and missing data. Biom. 63, 581-592 (1976).",
           "journal-title": "Biom."
         },
         {
@@ -2557,7 +2557,7 @@
           "volume": "62",
           "author": "D Mondal",
           "year": "2010",
-          "unstructured": "Mondal, D. & Percival, D. B. Wavelet variance analysis for gappy time series. Annals Inst. Stat. Math. 62, 943–966 (2010).",
+          "unstructured": "Mondal, D. & Percival, D. B. Wavelet variance analysis for gappy time series. Annals Inst. Stat. Math. 62, 943-966 (2010).",
           "journal-title": "Annals Inst. Stat. Math."
         },
         {
@@ -2578,7 +2578,7 @@
           "volume": "11",
           "author": "R Mazumder",
           "year": "2010",
-          "unstructured": "Mazumder, R., Hastie, T. & Tibshirani, R. Spectral regularization algorithms for learning large incomplete matrices. J. machine learning research 11, 2287–2322 (2010).",
+          "unstructured": "Mazumder, R., Hastie, T. & Tibshirani, R. Spectral regularization algorithms for learning large incomplete matrices. J. machine learning research 11, 2287-2322 (2010).",
           "journal-title": "J. machine learning research"
         },
         {
@@ -2595,7 +2595,7 @@
           "volume": "30",
           "author": "IR White",
           "year": "2011",
-          "unstructured": "White, I. R., Royston, P. & Wood, A. M. Multiple imputation using chained equations: issues and guidance for practice. Stat. medicine 30, 377–399 (2011).",
+          "unstructured": "White, I. R., Royston, P. & Wood, A. M. Multiple imputation using chained equations: issues and guidance for practice. Stat. medicine 30, 377-399 (2011).",
           "journal-title": "Stat. medicine"
         },
         {
@@ -2606,7 +2606,7 @@
           "volume": "20",
           "author": "MJ Azur",
           "year": "2011",
-          "unstructured": "Azur, M. J., Stuart, E. A., Frangakis, C. & Leaf, P. J. Multiple imputation by chained equations: what is it and how does it work? Int. journal methods psychiatric research 20, 40–49 (2011).",
+          "unstructured": "Azur, M. J., Stuart, E. A., Frangakis, C. & Leaf, P. J. Multiple imputation by chained equations: what is it and how does it work? Int. journal methods psychiatric research 20, 40-49 (2011).",
           "journal-title": "Int. journal methods psychiatric research"
         },
         {
@@ -2623,13 +2623,13 @@
           "volume": "9",
           "author": "S Hochreiter",
           "year": "1997",
-          "unstructured": "Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural computation 9, 1735–1780 (1997).",
+          "unstructured": "Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural computation 9, 1735-1780 (1997).",
           "journal-title": "Neural computation"
         },
         {
           "key": "24271_CR15",
           "doi-asserted-by": "crossref",
-          "unstructured": "Cho, K. et al. Learning phrase representations using RNN encoder-decoder for statistical machine translation. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing, EMNLP, 1724–1734 (2014).",
+          "unstructured": "Cho, K. et al. Learning phrase representations using RNN encoder-decoder for statistical machine translation. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing, EMNLP, 1724-1734 (2014).",
           "DOI": "10.3115/v1/D14-1179"
         },
         {
@@ -2638,7 +2638,7 @@
         },
         {
           "key": "24271_CR17",
-          "unstructured": "Sutskever, I., Vinyals, O. & Le, Q. V. Sequence to sequence learning with neural networks. In Advances in neural information processing systems, 3104–3112 (2014)."
+          "unstructured": "Sutskever, I., Vinyals, O. & Le, Q. V. Sequence to sequence learning with neural networks. In Advances in neural information processing systems, 3104-3112 (2014)."
         },
         {
           "key": "24271_CR18",
@@ -2648,33 +2648,33 @@
           "volume": "29",
           "author": "G Hinton",
           "year": "2012",
-          "unstructured": "Hinton, G. et al. Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups. Signal Process. Mag. IEEE 29, 82–97 (2012).",
+          "unstructured": "Hinton, G. et al. Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups. Signal Process. Mag. IEEE 29, 82-97 (2012).",
           "journal-title": "Signal Process. Mag. IEEE"
         },
         {
           "key": "24271_CR19",
-          "unstructured": "Bengio, Y. & Gingras, F. Recurrent neural networks for missing or asynchronous data. Adv. neural information processing systems 395–401 (1996)."
+          "unstructured": "Bengio, Y. & Gingras, F. Recurrent neural networks for missing or asynchronous data. Adv. neural information processing systems 395-401 (1996)."
         },
         {
           "key": "24271_CR20",
-          "unstructured": "Tresp, V. & Briegel, T. A solution for missing data in recurrent neural networks with an application to blood glucose prediction. NIPS 971–977 (1998)."
+          "unstructured": "Tresp, V. & Briegel, T. A solution for missing data in recurrent neural networks with an application to blood glucose prediction. NIPS 971-977 (1998)."
         },
         {
           "key": "24271_CR21",
-          "unstructured": "Parveen, S. & Green, P. Speech recognition with missing data using recurrent neural nets. In Advances in Neural Information Processing Systems, 1189–1195 (2001)."
+          "unstructured": "Parveen, S. & Green, P. Speech recognition with missing data using recurrent neural nets. In Advances in Neural Information Processing Systems, 1189-1195 (2001)."
         },
         {
           "key": "24271_CR22",
-          "unstructured": "Lipton, Z. C., Kale, D. & Wetzel, R. Directly modeling missing data in sequences with rnns: Improved classification of clinical time series. In Machine Learning for Healthcare Conference, 253–270 (2016)."
+          "unstructured": "Lipton, Z. C., Kale, D. & Wetzel, R. Directly modeling missing data in sequences with rnns: Improved classification of clinical time series. In Machine Learning for Healthcare Conference, 253-270 (2016)."
         },
         {
           "key": "24271_CR23",
-          "unstructured": "Choi, E., Bahadori, M. T., Schuetz, A., Stewart, W. F. & Sun, J. Doctor ai: Predicting clinical events via recurrent neural networks. In Machine Learning for Healthcare Conference, 301–318 (2016)."
+          "unstructured": "Choi, E., Bahadori, M. T., Schuetz, A., Stewart, W. F. & Sun, J. Doctor ai: Predicting clinical events via recurrent neural networks. In Machine Learning for Healthcare Conference, 301-318 (2016)."
         },
         {
           "key": "24271_CR24",
           "doi-asserted-by": "crossref",
-          "unstructured": "Pham, T., Tran, T., Phung, D. & Venkatesh, S. Deepcare: A deep dynamic memory model for predictive medicine. In Advances in Knowledge Discovery and Data Mining, 30–41 (2016).",
+          "unstructured": "Pham, T., Tran, T., Phung, D. & Venkatesh, S. Deepcare: A deep dynamic memory model for predictive medicine. In Advances in Knowledge Discovery and Data Mining, 30-41 (2016).",
           "DOI": "10.1007/978-3-319-31750-2_3"
         },
         {
@@ -2695,7 +2695,7 @@
           "volume": "40",
           "author": "L Zhou",
           "year": "2007",
-          "unstructured": "Zhou, L. & Hripcsak, G. Temporal reasoning with medical data—a review with emphasis on medical natural language processing. J. biomedical informatics 40, 183–202 (2007).",
+          "unstructured": "Zhou, L. & Hripcsak, G. Temporal reasoning with medical data - a review with emphasis on medical natural language processing. J. biomedical informatics 40, 183-202 (2007).",
           "journal-title": "J. biomedical informatics"
         },
         {
@@ -2713,7 +2713,7 @@
           "volume": "153",
           "author": "J Josse",
           "year": "2012",
-          "unstructured": "Josse, J. & Husson, F. Handling missing values in exploratory multivariate data analysis methods. J. de la Société Française de Stat. 153, 79–99 (2012).",
+          "unstructured": "Josse, J. & Husson, F. Handling missing values in exploratory multivariate data analysis methods. J. de la Société Française de Stat. 153, 79-99 (2012).",
           "journal-title": "J. de la Société Française de Stat."
         },
         {
@@ -2724,7 +2724,7 @@
           "volume": "28",
           "author": "DJ Stekhoven",
           "year": "2011",
-          "unstructured": "Stekhoven, D. J. & Bühlmann, P. Missforest—non-parametric missing value imputation for mixed-type data. Bioinforma. 28, 112–118 (2011).",
+          "unstructured": "Stekhoven, D. J. & Bühlmann, P. Missforest - non-parametric missing value imputation for mixed-type data. Bioinforma. 28, 112-118 (2011).",
           "journal-title": "Bioinforma."
         },
         {
@@ -2745,12 +2745,12 @@
           "volume": "12",
           "author": "F Pedregosa",
           "year": "2011",
-          "unstructured": "Pedregosa, F. et al. Scikit-learn: Machine learning in Python. J. Mach. Learn. Res. 12, 2825–2830 (2011).",
+          "unstructured": "Pedregosa, F. et al. Scikit-learn: Machine learning in Python. J. Mach. Learn. Res. 12, 2825-2830 (2011).",
           "journal-title": "J. Mach. Learn. Res."
         },
         {
           "key": "24271_CR35",
-          "unstructured": "Ioffe, S. & Szegedy, C. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In Proceedings of the 32nd International Conference on Machine Learning, 448–456 (2015)."
+          "unstructured": "Ioffe, S. & Szegedy, C. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In Proceedings of the 32nd International Conference on Machine Learning, 448-456 (2015)."
         },
         {
           "key": "24271_CR36",
@@ -2782,7 +2782,7 @@
         },
         {
           "key": "24271_CR42",
-          "unstructured": "Gal, Y. & Ghahramani, Z. A theoretically grounded application of dropout in recurrent neural networks. In Advances in Neural Information Processing Systems, 1019–1027 (2016)."
+          "unstructured": "Gal, Y. & Ghahramani, Z. A theoretically grounded application of dropout in recurrent neural networks. In Advances in Neural Information Processing Systems, 1019-1027 (2016)."
         },
         {
           "key": "24271_CR43",
@@ -2798,7 +2798,7 @@
         },
         {
           "key": "24271_CR45",
-          "unstructured": "Johnson, A. E., Pollard, T. J. & Mark, R. G. Reproducibility in critical care: a mortality prediction case study. In Machine Learning for Healthcare Conference, 361–376 (2017)."
+          "unstructured": "Johnson, A. E., Pollard, T. J. & Mark, R. G. Reproducibility in critical care: a mortality prediction case study. In Machine Learning for Healthcare Conference, 361-376 (2017)."
         },
         {
           "key": "24271_CR46",
