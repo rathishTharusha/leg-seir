@@ -1,9 +1,9 @@
-# Lecturer-review release decisions - 18 October 2026
+# Release decisions, 18 October 2026
 
-- Public named GitHub `rathishTharusha/leg-seir` and Hugging Face dataset `rathishTharusha/leg-seir`; anonymity postponed at the team's request. Publication through these accounts is not anonymous.
-- MIT applies to original team software only. The manuscript and original providers' data/material are not relicensed by the software license.
-- Public HF snapshot contains audited derived tables, source URLs/hashes and the unchanged complete experiment export. Bulk government PDFs/geography/weather archives and third-party literature PDFs remain in the team's full retained package.
-- Public training notebook uses a new pinned audited-table loader with unchanged scientific cells. It is distinct from the original source-parsing run. CPU smoke checks are not reported as research results.
-- Original evidence, source hashes and experimental selection remain frozen. No post-test tuning or score substitutions are introduced by this release.
-- The main PDF is the team-supplied seven-page revision with nine named authors, published without editorial changes. The earlier supplementary PDF remains a technical evidence document. Venue formatting is pending.
-- Manuscript LaTeX, bibliography dependencies, paper figure/table dependencies and Overleaf ZIPs are excluded from the current repository/release assets and retained locally for the team's Overleaf workflow. Historical Git commits are not rewritten.
+- GitHub and Hugging Face use the public account `rathishTharusha/leg-seir`. These accounts reveal the owner's identity. Anonymous sharing was postponed at the team's request.
+- MIT applies to the team's original software. It does not change the rights of the paper or other providers' data.
+- The public dataset contains checked input tables, original URLs/hashes and the unchanged saved experiment. The team keeps bulk original reports, unused weather/geographic files and third-party paper PDFs separately.
+- The public training notebook has a new table downloader. Its model and training cells match the original experiment. Its short CPU check is an execution check, not a research result.
+- Original experiment files, hashes and model-setting decisions stay unchanged. This release does not tune models using test outcomes or replace scores.
+- The public main paper is the supplied seven-page revision with nine authors. The public supplement is the earlier technical document. The final venue format is not yet chosen.
+- LaTeX, manuscript figure/table source dependencies and Overleaf ZIPs are maintained outside the current public repository and release downloads. Historical Git commits are kept.

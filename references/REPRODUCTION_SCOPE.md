@@ -1,39 +1,41 @@
-# Reference-paper reproduction scope
+# What earlier experiments were actually reproduced?
 
-An executable notebook, an architecture check and a reproduced published experiment are different evidence. This register supersedes any stronger wording in the copied historical READMEs.
+Running a notebook, checking an equation and reproducing a published experiment are different achievements. This page gives the limits of our earlier checks. It takes priority over stronger wording in older copied records or notebook job names.
 
-| Work | PDF | Code / notebook evidence | Permitted claim |
-|---|---|---|---|
-| Weng2024 dengue benchmark | Verified original |Five pinned author-code Kaggle kernels COMPLETE; raw CSVs and summary copied. Independent R1 implementation also available. |Author-code shifted GNN experiments rerun, with explicit numerical deviations. Not all20 TableI rows or all dataset variants reproduced. |
-| STGAT in Weng |Same benchmark PDF; GAT foundational PDF additionally retrieved |Weng's GAT-plus-LSTM wiring and author runner; dense implementation parity test |Benchmark adaptation reproduced/checked. Do not cite an unrelated trajectory STGAT as the exact architecture implemented. |
-| Guo2019 ASTGCN |Correct AAAI PDF retrieved; wrong old file quarantined |Weng-adapted encoder and author-code runner, not a PeMS reproduction |Architecture component/adaptation verified under dengue benchmark. Original traffic scores not reproduced here. |
-| Bai2021 A3T-GCN |Published version retrieved with correct seven-author list; older Zhu preprint separately retained |Weng-adapted runner; implementation parity evidence |Dengue adaptation rerun. Original traffic datasets/results not reproduced. |
-| Li2018 DCRNN |Verified original |Weng runner and dense transcription parity evidence |Dengue adaptation rerun. Original traffic forecasting results not reproduced. |
-| Shi2019/2020 AGCN variants |Two-stream paper plus multi-stream attention preprint |Weng/PyG AAGCN configuration, adaptive=False and attention=True; transcription parity |State the exact library/configuration and adaptation. Do not claim skeleton-action accuracy reproduction or equate every AGCN version. |
-| Wu2019 Graph WaveNet |Verified original |Adaptive adjacency formula used; our historical/new adaptive encoders differ from complete Graph WaveNet |Method inspiration and explicit adaptation. Full Graph WaveNet traffic results not reproduced. |
-| Gopalakrishnan2020 SEIR lecture |Correctly identified lecture notes recovered from misnamed Hasan file |R3 notebook and standalone Kaggle kernel COMPLETE; six saved qualitative/numerical checks |Basic SEIR mathematical calibration, not dengue forecast reproduction or a peer-reviewed research experiment. |
-| Phaijoo/Gurung2018 SEIR-SEI |Verified article after a cover page |R4 notebook and standalone kernel COMPLETE; seven checks, sensitivity-index table and documented baseline inconsistencies |Named equilibrium/sensitivity targets reproduced; report which parameter column/version was used. Not our open-loop decoder's empirical validation. |
-| Hasan2022 vector-host SEIR-SEI |Correct publisher PDF now retrieved |No dedicated Hasan reproduction notebook in the audited collection |Theory/context citation after direct equation review. Do not relabel R3/R4 as its reproduction. |
-| Liu2025 Sri Lankan SEIR-LSTM |Original PLOS PDF now retrieved |No exact Liu dataset/code run established in this audit |Closest mechanistic-neural context. Our SEIR decoder is a separate implementation/ablation. |
-| GulMohamed2026 DengueGNN |Verified original |R2 architecture experiments exist; no exact original subset/code protocol established |Architecture exploration only. Original performance not independently reproduced. |
-| Raissi2019/Nguyen2024 PINN |Verified originals |No full original-task reproduction in this package |Related-work context only; a differentiable SEIR decoder alone is not a PINN. |
+| Reference | What was checked or run | What we can say |
+|---|---|---|
+| Weng 2024 dengue benchmark | Five shifted-dataset GNN runs using the authors' code; saved CSVs and an independent implementation check | Those five runs were repeated with recorded numerical differences. The full 20-row table and all data variants were not reproduced. |
+| STGAT used by Weng | Weng's GAT-plus-LSTM model and runner, with a dense implementation agreement check | We checked this dengue adaptation. It is not a reproduction of an unrelated trajectory-prediction model also called STGAT. |
+| Guo 2019 ASTGCN | Correct paper obtained; Weng's adapted encoder and runner checked | We reran the dengue adaptation, not the original traffic dataset scores. |
+| Bai 2021 A3T-GCN | Published seven-author paper identified; Weng's adapted runner checked | We reran the dengue adaptation, not the original traffic experiment. The older preprint is a separate reference. |
+| Li 2018 DCRNN | Original paper and Weng's runner; agreement check with a dense transcription | We reran the dengue adaptation, not the original traffic results. |
+| Shi 2019/2020 AGCN variants | Related papers identified; Weng/PyG AAGCN with `adaptive=False`, `attention=True` checked | Name the actual library, settings and adaptation. We did not reproduce skeleton-action recognition accuracy or every AGCN variant. |
+| Wu 2019 Graph WaveNet | Original paper and adaptive graph formula checked | This informed our design. Our encoders are not the complete Graph WaveNet model, and its traffic scores were not reproduced. |
+| Gopalakrishnan 2020 SEIR notes | Lecture source identified; six saved equation/example checks and a standalone notebook | Basic SEIR examples were checked. This is not a peer-reviewed dengue forecasting experiment. |
+| Phaijoo/Gurung 2018 SEIR-SEI | Paper, seven checks and the sensitivity-index table, with parameter inconsistencies documented | Specific mathematical results were checked using stated parameter sets. This does not validate our forecasting decoder on surveillance data. |
+| Hasan 2022 vector-host SEIR-SEI | Correct paper obtained and equations reviewed | Background only; no dedicated original experiment reproduction was established. Do not label the previous two notebooks as reproductions of Hasan. |
+| Liu 2025 Sri Lankan SEIR-LSTM | Original paper obtained | Related mechanistic/neural work. No exact original dataset-and-code run was established here. Our decoder is a separate implementation. |
+| GulMohamed 2026 DengueGNN | Original paper and architecture exploration | We explored an architecture. The original task subset and code protocol were not established, so its published performance was not independently reproduced. |
+| Raissi 2019 / Nguyen 2024 PINNs | Original papers obtained | Background only. A disease decoder that supports gradients is not automatically a physics-informed neural network (PINN). |
 
-## Numerical agreement in the author-code Weng runs
+## Achieved agreement in Weng author-code reruns
 
-| Encoder | Published CV RMSE | Rerun CV RMSE | Relative difference |
+| Encoder | Original CV RMSE | Rerun CV RMSE | Relative difference |
 |---|---:|---:|---:|
-| STGAT |44.782211|45.431667|+1.450%|
-| A3TGCN |58.521675|60.106386|+2.708%|
-| ASTGCN |47.722691|48.821220|+2.302%|
-| DCRNN |71.608346|71.321104|−0.401%|
-| AAGCN |55.830171|55.829052|−0.002%|
+| STGAT | 44.782211 | 45.431667 | +1.450% |
+| A3TGCN | 58.521675 | 60.106386 | +2.708% |
+| ASTGCN | 47.722691 | 48.821220 | +2.302% |
+| DCRNN | 71.608346 | 71.321104 | -0.401% |
+| AAGCN | 55.830171 | 55.829052 | -0.002% |
 
-These are archived reruns, not newly trained during package preparation. The five original Kaggle statuses were checked COMPLETE on 10 October 2026. Dependency deviations, random-seed/stack differences and metric conventions are documented inside their notebooks. A kernel named “exact reproduction” is a task label, not proof of exact equality. CSVs are authoritative for the achieved agreement.
+These are earlier saved reruns, not training performed while preparing this release. Five Kaggle runs were checked as COMPLETE on 10 October 2026. The CSV files record the achieved scores. A job name saying `exact reproduction` does not prove exact numerical equality.
 
-The source snapshot pins commit`45f1c0878f002407633ed1237638734faa9ceb2b`, includes the authors' evaluation/model/plotting files, array, graph, requirements and MIT code license, and records hashes. The online kernels clone the full pinned repository and install their stated stack. The snapshot is a small offline provenance subset; do not imply it contains every upstream asset.
+The original software version is commit `45f1c0878f002407633ed1237638734faa9ceb2b`. The notebooks download that repository and record their software changes. An earlier offline source copy contains selected evaluation/model/plotting files, array, graph, requirements and MIT license, not every upstream file.
 
-## Execution versus source
+## Source files and execution records
 
-Many copied notebooks have zero stored execution counts and outputs. Their generated CSVs and live completed Kaggle run status provide separate evidence. Crosscheck notebooks require their local library and original project inputs; they are archived research notebooks, not all standalone. The seven author/mathematical Kaggle kernels are standalone execution wrappers with documented internet/dependency requirements. Our main independent notebook embeds all runtime model/data logic.
+Some copied notebooks have empty outputs or zero execution counts. Their saved CSVs and completed Kaggle jobs are separate evidence of what ran. Older cross-check notebooks may need files from the team's full research folder; they are not all standalone.
 
-If the rewritten paper needs a new external-paper result beyond these scopes, reproduce the exact original task and cite its dataset/code version. Otherwise narrow the claim rather than supply substitute numbers.
+The seven public Kaggle notebooks include their setup and download steps. The main LEG-SEIR public-table notebook contains its model and training logic and starts from checked public tables.
+
+For a new claim about another paper, repeat its exact task and record the data/code version, or clearly describe an adaptation. Do not treat its published score on another task as a matched LEG-SEIR competitor.

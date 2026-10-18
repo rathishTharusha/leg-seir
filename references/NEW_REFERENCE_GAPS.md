@@ -1,14 +1,14 @@
-# New related-work reproduction status
+# Related methods not yet reproduced
 
-Historical completed reruns and their scope are in `historical/REPRODUCTION_SCOPE.md`. They remain historical, not new LEG-SEIR comparison results.
+[REPRODUCTION_SCOPE.md](REPRODUCTION_SCOPE.md) describes the earlier reruns. They are separate from the final LEG-SEIR comparison.
 
-| New reference | PDF acquired | Original-task reproduction in this package |
+| Related method | Paper obtained and identity checked | Original experiment rerun here |
 |---|---|---|
-| MepoGNN | Yes, title/hash checked | Not performed |
-| IeRNN | Yes, title/hash checked | Not performed |
-| CausalGNN | Yes, title/hash checked | Not performed |
-| M-Graphormer | Yes, title/hash checked | Not performed |
-| HeatGNN | Yes, title/hash checked | Not performed |
-| Liu-Cao ST-GAT | Yes, title/hash checked | Not performed |
+| MepoGNN | Yes | No |
+| IeRNN | Yes | No |
+| CausalGNN | Yes | No |
+| M-Graphormer | Yes | No |
+| HeatGNN | Yes | No |
+| Liu-Cao ST-GAT | Yes | No |
 
-No placeholder notebook is labelled as a completed external reproduction. The current final comparison is against implemented internal baselines and matched controls. New published methods require original released inputs/configurations or a clearly named adaptation; their published scores must not be inserted into the same table as our different dataset/task scores.
+These papers provide background and ideas. No placeholder notebook is counted as a completed reproduction. The final results table compares our implemented baselines and removal controls on the same task. To compare another published method fairly, run its specified version on a clearly defined task. Do not insert scores from its different dataset into our results table.

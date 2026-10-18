@@ -1,4 +1,4 @@
-"""Independent CPU and chronology verification for the full evaluation export."""
+"""Check saved model predictions on CPU and check the order of data splits."""
 
 import argparse
 import hashlib

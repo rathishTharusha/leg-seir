@@ -1,10 +1,11 @@
-"""Retrieve the pinned public snapshot and enforce every SHA256."""
+"""Download the exact saved files and check each file fingerprint (SHA256)."""
 import argparse,hashlib,json,shutil,os,urllib.request
 from pathlib import Path
 os.environ.setdefault('HF_HUB_DISABLE_XET','1')
 from huggingface_hub import hf_hub_download
 ROOT=Path(__file__).resolve().parents[1]
 def fetch(data_only=False):
+ # The lock file gives the exact dataset version and expected file hashes.
  lock=json.loads((ROOT/'artifacts.lock.json').read_text())
  for item in sorted(lock['files'],key=lambda x:x['path'].endswith('evaluation_outputs.zip')):
   name=item['path']
@@ -14,6 +15,7 @@ def fetch(data_only=False):
    if name=='evidence/evaluation_outputs.zip': shutil.copy2(dst,ROOT/'artifacts/evaluation_outputs.zip')
    print('Verified existing:',name)
    continue
+  # Try both archive hosts, but accept a download only if its hash matches.
   if name=='evidence/evaluation_outputs.zip':
    src=ROOT/'artifacts/.evaluation_download';src.parent.mkdir(parents=True,exist_ok=True)
    urls=['https://github.com/rathishTharusha/leg-seir/releases/download/v0.1.0/evaluation_outputs.zip',

@@ -1,13 +1,25 @@
-# Lecturer review - LEG-SEIR
+# Guide for lecturer review
 
-Read `paper/LEG_SEIR_manuscript.pdf` first, then the supplement for equations, complete controls and reproduction scope. Vector figures and their numerical inputs are in `figures/publication/`. The paper is the team-supplied seven-page IEEE revision dated 18 October 2026, including its author list. The submission venue remains to be confirmed.
+Start with `paper/LEG_SEIR_manuscript.pdf`. The supplement gives the full equations, comparison models and experiment details. Figure files and their input numbers are in `figures/publication/`.
 
-The main PDF is published byte-for-byte as supplied by the team. The supplementary PDF retains the earlier technical supplement. Manuscript LaTeX, figure dependencies and the Overleaf ZIP are maintained separately, outside the current public repository and release assets. The recorded experiments are unchanged.
+The main PDF is the supplied seven-page team revision from 18 October 2026, with nine authors. It is unchanged here. The public supplementary PDF is the earlier technical supplement. The team keeps manuscript source, figure/table dependencies and the Overleaf ZIP separately. The submission venue is still to be chosen.
 
-The recorded retrospective study reports mean district-pooled RMSE 79.6343 for LEG-SEIR, versus persistence 87.3824, identity MLP 81.3923 and the strongest shared-adapter control 80.7569. Neural values average five seeds; seed spread is not a confidence interval. The 18 overlapping 2026 origins are not independent replications. The graph-removal control removes both graph messages and imported pressure, so isolated attribution needs further ablations.
+## Main finding
 
-For a quick independent code/evidence review, follow the README CPU commands. They validate all 265 saved neural fits, including checkpoint predictions, hashes, chronology and recomputed scores. This does not retrain those fits or independently refit ridge. For new training use the standalone audited-input notebook; its scientific cells match the frozen notebook but its loader and identity are new. `python scripts/train.py --smoke` checks execution only and is not a paper experiment.
+The average 2026 RMSE over five neural training seeds is 79.6343 for LEG-SEIR, 81.3923 for identity MLP and 80.7569 for shared adapter. Persistence gives 87.3824. Lower RMSE is better. LEG-SEIR's advantage over shared adapter is small.
 
-Public code: https://github.com/rathishTharusha/leg-seir
+These are results on 18 overlapping forecast starting points from a 2026 sample seen earlier in the research. They are not independent outbreak replications or proof of future accuracy. Variation across seeds is not a confidence interval.
 
-Public data/evidence: https://huggingface.co/datasets/rathishTharusha/leg-seir (immutable revision in `artifacts.lock.json`). Original provider records and hashes are retained. Third-party paper PDFs and bulk raw archives are not redistributed here. Bibliographies, paper-source links and documented reproduction gaps distinguish implemented controls from papers cited only for context.
+Removing the graph changes both neural messages and imported pressure. This comparison does not tell us the separate effect of each mechanism. Further component tests are still needed.
+
+## What a reviewer can run
+
+Follow the CPU commands in the README to check saved weights, predictions, file hashes, data-split order and recalculated scores for 265 neural fits. This does not retrain the models or refit ridge regression.
+
+For new training, use the public-table notebook. Its model/training cells match the original, but the input downloader is new. `python scripts/train.py --smoke` only checks that the code runs with a small budget; it is not a paper experiment.
+
+Code: https://github.com/rathishTharusha/leg-seir
+
+Data and saved experiments: https://huggingface.co/datasets/rathishTharusha/leg-seir
+
+The exact input version is in `artifacts.lock.json`. Original source URLs and hashes are included. Bulk original archives and third-party research PDFs are kept separately. The reference notes say which earlier experiments were rerun and which papers were used only as background.

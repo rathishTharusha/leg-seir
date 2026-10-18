@@ -1,4 +1,4 @@
-"""Execute the standalone notebook in a fresh kernel (full training by default)."""
+"""Run the training notebook in a new Python session; full training is the default."""
 import argparse,os
 from pathlib import Path
 import nbformat
@@ -11,5 +11,6 @@ if __name__=='__main__':
  nb=nbformat.read(notebook,as_version=4)
  try: NotebookClient(nb,timeout=None,resources={'metadata':{'path':str(ROOT)}}).execute()
  finally:
+  # Save the executed cells even if a later cell fails.
   a.output.parent.mkdir(parents=True,exist_ok=True);nbformat.write(nb,a.output)
  print(a.output)

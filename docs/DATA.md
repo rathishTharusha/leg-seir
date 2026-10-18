@@ -1,9 +1,27 @@
-# Data and release rights
+# Where the data come from
 
-Public tables and complete scientific evidence: https://huggingface.co/datasets/rathishTharusha/leg-seir
+The checked tables and saved experiments are on [Hugging Face](https://huggingface.co/datasets/rathishTharusha/leg-seir). Hugging Face hosts our files; it is not the original data source.
 
-Hugging Face is the distributor, not the original source. Cases originate in the Epidemiology Unit Weekly Epidemiological Reports; population scaling uses Sri Lanka Department of Census and Statistics Census 2012 tables. Original URLs and hashes, source reconstruction decisions and exclusions accompany the release. An original source-file hash authenticates bytes, not clinical truth or real-time availability.
+Case counts come from Sri Lanka's Epidemiology Unit Weekly Epidemiological Reports. Population values come from Department of Census and Statistics Census 2012 tables. The source manifest lists original URLs and SHA256 hashes. A manifest is a file list, and a hash is a file fingerprint used to detect changes.
 
-There are 686 report slots, 663 complete district rows and 23 missing rows. Missing windows are dropped, not filled with zero. Ampara includes Kalmunai reporting divisions, yielding 25 districts. Final eligible targets use 18 overlapping origins in 2026. The archive ends at Vol. 53 No. 33, not the end of that calendar year.
+## What is in the case table?
 
-MIT applies to original team software. Third-party data retain source-specific rights; no blanket MIT or open-data license is assigned to government reports, population tables or ancillary geography/climate. Raw PDFs, reference papers, lecturer files and unused ancillary archives are excluded from the public distribution. The source retrieval script consults the original URLs and verifies exact hashes. The original team snapshot is preserved separately.
+There are 686 report positions, called report slots, ending at Vol. 53 No. 33. Of these, 663 have complete district rows and 23 are missing. This is not a complete record of the whole 2026 calendar year.
+
+The reports have 26 reporting divisions. We combine Ampara and Kalmunai to obtain 25 district columns. The model uses case histories and fixed population scaling. It does not use weather, measured travel or district boundaries as inputs.
+
+A blank entry means missing data, not zero cases. Any input-and-target window that includes a missing row is excluded. We do not fill these gaps by drawing a line between known values.
+
+The final 2026 comparison uses 18 eligible forecast starting points. Their input and target periods overlap. They are not 18 independent outbreaks.
+
+## How counts were checked
+
+The saved source records explain how printed counts and arithmetic repairs were accepted. Unresolved reports remain missing. Files also record cases where printed weekly and cumulative values disagree. A matching hash confirms that the file bytes match our saved copy; it does not prove that the original clinical reports are error-free or were available in real time.
+
+The alternative printed-repeat table uses a different way of handling repeated reports. It is saved for later study. The reported LEG-SEIR results were not trained or tested on that alternative.
+
+## File rights and access
+
+MIT covers the team's original software. Government reports, population tables and other providers' files keep their own terms. Do not assume that the whole dataset has an MIT or unrestricted open-data license.
+
+The public release excludes bulk original report PDFs, third-party paper PDFs, lecturer files and unused weather/geographic archives. The team keeps its original source copy separately. The download script checks original URLs against recorded hashes and reports files that have changed or disappeared.

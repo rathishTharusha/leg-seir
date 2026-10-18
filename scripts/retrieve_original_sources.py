@@ -1,4 +1,4 @@
-"""Reacquire original public source files; never silently accept changed bytes."""
+"""Download original source files and report any missing or changed copies."""
 import argparse,hashlib,json,urllib.request
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -9,6 +9,7 @@ if __name__=='__main__':
  for item in manifest:
   if item.get('status')=='failed': continue
   relative=Path(item['path'])
+  # A manifest entry must stay inside the chosen download folder.
   if relative.is_absolute() or '..' in relative.parts: raise ValueError('Unsafe manifest path')
   dst=a.destination/relative
   try:

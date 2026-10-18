@@ -1,4 +1,4 @@
-"""Render standard-component diagrams and figures from frozen scientific exports."""
+"""Draw diagrams and charts using the original saved experiment results."""
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -152,7 +152,7 @@ for name in ['lagged_full','identity_mlp','shared_adapter']:
     rr=final[final.name==name];ensemble[name]=np.mean([np.load(D/(token+'_test.npz'))['prediction'] for token in rr.token],axis=0)
 for h,ax in enumerate(axes):
     target=idx+h; order=np.argsort(target);target=target[order]
-    # Break lines at missing report slots: gaps are evidence, not interpolated observations.
+    # Leave a gap where a report is missing; do not draw a line as if it was observed.
     x=target.astype(float);gaps=np.r_[False,np.diff(target)>1]
     def segmented(y):
         xx=[];yy=[]
@@ -178,7 +178,7 @@ for seed in range(5):
     c=pd.read_csv(D/f'final_lagged_full_lr0.003_seed{seed}_curve.csv');axes[0].plot(c.epoch,c.train_loss,label=f'Seed {seed}');axes[1].plot(c.epoch,c.validation_RMSE)
 axes[0].set(xlabel='Epoch',ylabel='Standardized-log training MSE',title='(a) Objective');axes[1].set(xlabel='Epoch',ylabel='2025 validation count RMSE',title='(b) Checkpoint selection');axes[0].legend(fontsize=7);[a.grid(alpha=.15) for a in axes];fig.tight_layout();save(fig,'training_curves')
 
-# Complete tables, including negative and removal-LR sensitivity outcomes.
+# Keep all table rows, including worse results and extra learning-rate checks.
 s.to_csv(OUT/'all_scored_records.csv',index=False)
 stats={}
 for year in [2023,2025]:

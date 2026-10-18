@@ -1,10 +1,18 @@
-# Reproduce, verify, or retrain
+# Check saved results or train again
 
-Start in the repository root. Use Python 3.11+ in a new virtual environment:
+These are different tasks. Checking saved results reloads existing weights and recalculates errors. Training again starts with new weights and can give slightly different results on a different computer.
+
+## Option 1: check the recorded experiment on CPU
+
+Use Python 3.11 or later. Open a terminal in the repository folder and create a virtual environment, which keeps this project's packages separate:
 
 ```sh
 python -m venv .venv
-# Activate .venv for your shell, then:
+```
+
+Activate it with `.venv\Scripts\Activate.ps1` in Windows PowerShell, or `source .venv/bin/activate` on Linux/macOS. Then run:
+
+```sh
 python -m pip install -r requirements-cpu.txt
 python -m pip install -e . --no-deps
 python scripts/fetch_artifacts.py
@@ -13,30 +21,53 @@ python scripts/build_figures.py
 python -m unittest discover -s tests -v
 ```
 
-`artifacts.lock.json` pins the Hugging Face commit and every downloaded byte hash. The CPU verification covers the original recorded run. It is distinct from training again. See `results/environment.json` and the original `pip_freeze.txt` inside `evaluation_outputs.zip` for the Kaggle GPU runtime; the CPU requirements describe the tested release-verification environment. Runtime differences may change training weights. The complete platform package inventory is preserved unchanged in that archive; it includes preinstalled software unrelated to this experiment. Repository requirements list the dependencies needed for training or verification.
+The downloader uses `artifacts.lock.json` to choose an exact Hugging Face version and check file hashes. The verifier checks the original 265 saved neural fits. It rebuilds their predictions from saved weights, rather than training them again. Figures are written to `figures/publication/`.
 
-## Train from the public audited input tables
+`results/environment.json` records the original Kaggle runtime. The complete package list, `pip_freeze.txt`, is kept unchanged inside `evaluation_outputs.zip`. That list includes packages preinstalled by the platform that this project does not use. The repository's requirements files list the packages needed for training or checking results.
 
-On Kaggle, enable GPU and Internet and preserve its CUDA-enabled PyTorch. **Do not install `requirements-cpu.txt` there:** its CPU-only PyTorch is intended for local verification. `requirements-training.txt` records the non-PyTorch dependencies from the original GPU run; install them in a setup cell if needed, restart the kernel after environment changes, then execute the standalone notebook. Check `torch.cuda.is_available()` before starting. The new loader was smoke-tested on CPU; a fresh full GPU retraining was not performed for the release. The recorded GPU environment is preserved separately so runtime differences remain visible.
+## Option 2: train from the checked public tables
 
-Run `notebooks/LEG_SEIR_train_from_audited_data.ipynb` in a fresh GPU kernel, with internet enabled or `LEG_SEIR_DATA_DIR` pointing to a previously downloaded snapshot. It uses only audited case/population/provenance inputs, not predictions or checkpoints, to fit the models. The scientific model and training cells are unchanged from the evaluated notebook; its input loader is different and has a new code identity. The full study performs 180 development and 75 primary final fits plus selected removal-LR sensitivities (85 final fits in the original run); exact retrained selections/sensitivity counts can differ by runtime. Outputs go to a new timestamped directory. Never replace archived evidence with new outputs.
+Open `notebooks/LEG_SEIR_train_from_audited_data.ipynb` in a fresh Kaggle notebook or another GPU environment.
 
-The original immutable full-study notebook remains under `experiments/frozen/`. It parses the original report PDFs and requires the original source snapshot. `scripts/retrieve_original_sources.py` retrieves the publicly referenced source URLs with strict hashes; some providers may change or remove old files. That failure is explicit. The raw third-party snapshot is retained privately by the research team and is not covered by MIT.
+1. Enable GPU and Internet. Check `torch.cuda.is_available()` before starting.
+2. Keep Kaggle's CUDA-enabled PyTorch. **Do not install `requirements-cpu.txt` on Kaggle GPU:** it contains CPU-only PyTorch.
+3. If needed, install the other recorded packages from `requirements-training.txt` in a setup cell. Restart the kernel after changing the environment.
+4. Save the notebook before running. If the code cannot find it, set `STUDY_NOTEBOOK` to its saved path.
+5. Run all cells. New outputs go to a folder with a timestamp. Keep them separate from the original saved experiment.
 
-For that original workflow, first fetch the public artifact metadata, run `python scripts/retrieve_original_sources.py` to populate `sources/` and its `manifest.json`, then run `python scripts/train_original.py` from a fresh checkout. The wrapper supplies the original notebook path and repository working directory without changing its code. It refuses to overwrite an existing `evaluation_outputs/` run. Reacquiring 714 original files can be slow; this source-retrieval workflow was not rerun end to end for the lecturer release. The audited-input notebook avoids those PDF/geography dependencies and is the recommended public training path.
+The notebook downloads checked case and population tables. It does not read saved forecasts or weights as training inputs. For offline use, point `LEG_SEIR_DATA_DIR` to a previously downloaded input folder.
 
-## Model source
+The model and training cells are unchanged from the original experiment. The input loader is new because it reads prepared tables instead of parsing report PDFs. The new loader passed a short CPU execution check; a full new GPU retraining was not completed for this release.
 
-Readable scientific fragments are extracted from the frozen notebook under `src/leg_seir/_frozen/`. They intentionally use a shared namespace, matching the evaluated implementation. `leg_seir.build_candidate(config, fold, population)` supplies that namespace and preserves checkpoint parameter names. The original notebook, not an adapted external architecture, defines the recorded experiment.
+The full study has 180 development fits and 75 main final fits, plus extra checks of removal models at other learning rates. The original run had 10 such extra fits. A new run can choose different settings or numbers of extra fits because software and hardware affect training.
 
-## Paper and figures
+For a short execution check, use `python scripts/train.py --smoke`. It runs two epochs with one seed. Its output is not a reproduction of the paper's scores.
 
-`scripts/build_figures.py` regenerates all nine publication figures from verified saved outputs. `notebooks/LEG_SEIR_results_gallery.ipynb` is an inspection notebook. It does not train models. Compiled manuscript and supplementary PDFs are in `paper/`. The team maintains the LaTeX/Overleaf project separately; sources and the Overleaf ZIP are excluded from the current public repository and release assets. Bibliographic research records remain under `references/`. The team-supplied manuscript PDF is preserved as received; its wording about dataset release predates the public Hugging Face release linked in the README.
+## Option 3: start from the original report PDFs
 
-## Important distinctions
+The unchanged notebook is `experiments/frozen/Dengue_final_study.ipynb`. It needs the original source files. From a fresh checkout, run:
 
-- Seed-mean RMSE is not ensemble RMSE; seed SD is not a confidence interval.
-- The 2026 case study was previously inspected and is retrospective.
-- Alternative printed-repeat data are archived but not a completed LEG-SEIR sensitivity experiment.
-- CPU parity verifies stored weights, not a fresh fit or biological validity.
-- Related-work papers were not all reproduced as matched numerical competitors.
+```sh
+python scripts/fetch_artifacts.py --data-only
+python scripts/retrieve_original_sources.py
+python scripts/train_original.py
+```
+
+The source script downloads original URLs and checks their recorded hashes. It reports files that are missing or have changed, rather than silently accepting new versions. The original team copy is kept separately and is not covered by MIT. Downloading 714 original files can be slow. This full download-and-retrain path was not rerun from start to finish for the lecturer release; the public-table notebook is the recommended training path.
+
+The original runner refuses to overwrite an existing `evaluation_outputs/` folder. Keep each experiment in a separate checkout or output location.
+
+## Reading model source and viewing figures
+
+`src/leg_seir/_frozen/` contains unchanged parts of the original notebook. They share variables and must run in order. Use `leg_seir.build_candidate(config, fold, population)` instead of importing these files one at a time. [CODE_GUIDE.md](CODE_GUIDE.md) explains the functions.
+
+`scripts/build_figures.py` rebuilds all nine figures from saved results. `notebooks/LEG_SEIR_results_gallery.ipynb` displays these results without training. The PDFs in `paper/` are maintained separately from the team's Overleaf source. Reference records remain under `references/`. The supplied public PDF still uses older dataset-availability wording; the current links are in the README.
+
+## How to interpret a successful check
+
+- Agreement after loading saved weights does not mean a new training run must get identical weights.
+- The average of five seed scores differs from the error of an averaged forecast.
+- Seed standard deviation is not a confidence interval.
+- The 2026 study is retrospective, not a new unseen future outbreak test.
+- The alternative printed-repeat table was not used for a completed LEG-SEIR experiment.
+- Citing a paper or downloading its PDF does not mean we reproduced its experiments.

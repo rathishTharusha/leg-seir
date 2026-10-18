@@ -1,4 +1,4 @@
-"""Execute the unchanged source-parsing notebook from the repository root."""
+"""Run the original notebook that reads report PDFs, without changing its cells."""
 import os
 from pathlib import Path
 import nbformat
@@ -12,5 +12,6 @@ if __name__=='__main__':
  nb=nbformat.read(notebook,as_version=4)
  try:NotebookClient(nb,timeout=None,resources={'metadata':{'path':str(ROOT)}}).execute()
  finally:
+  # Keep the executed notebook so a failed run can also be inspected.
   (ROOT/'runs').mkdir(exist_ok=True)
   nbformat.write(nb,ROOT/'runs/executed_original.ipynb')

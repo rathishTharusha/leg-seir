@@ -1,7 +1,17 @@
-# Literature and reproduction evidence
+# Reference papers and earlier experiment checks
 
-The paper bibliography (`paper/references.bib`) and source/PDF URL manifests retain the researched references. Main and supplementary texts cite 26 and 50 works respectively. `REFERENCE_COVERAGE.md` and the metadata audit explain their roles. Raw third-party paper PDFs are not redistributed in this public software repository; use the recorded publisher/open-access URLs or the team's retained research collection.
+The main paper cites 26 works and the supplement cites 50. The team keeps their full manuscript bibliography in Overleaf. This repository keeps additional bibliography records, publisher/source URLs and checks of reference details. Third-party paper PDFs are not copied into the public repository.
 
-Historical reproduction scopes and numerical deviations are explicitly tabulated. The seven standalone mathematical/author-code Kaggle wrappers and their saved scores are retained under `reference_reproductions/`. They are historical evidence, not newly executed release checks and not matched LEG-SEIR test competitors. Upstream assets are downloaded from their original source by those wrappers rather than republished. Some copied status records contain old package-relative paths; the scope registers describe their meaning and limitations.
+## How to read these records
 
-The claim audit predates the public-loader release. Code/data release paths are superseded by the top-level README and artifact lock; scientific claims are unchanged. Missing external-paper reruns and attribution ablations remain missing, rather than being replaced by paper PDF acquisition.
+- `REFERENCE_COVERAGE.md` shows where references are used.
+- `REPRODUCTION_SCOPE.md` says what we actually ran for each earlier method.
+- `HISTORICAL_REPRODUCIBILITY_MATRIX.md` explains missing inputs and software changes in those older runs.
+- `NEW_REFERENCE_GAPS.md` lists related methods that were read but not reproduced.
+- JSON files keep detailed source and reference metadata. CSV files link claims to evidence.
+
+Downloading a paper is different from reproducing its results. Implementing a similar architecture is also different from repeating the original experiment on its original data.
+
+Seven standalone Kaggle notebooks and saved comparison scores are under `reference_reproductions/`. These are earlier experiment records, not new runs made for this release and not matched competitors in the LEG-SEIR 2026 results table. They download upstream code and data rather than redistributing those files here.
+
+Some older audit records use paths from the original research folder. Use the current README and `artifacts.lock.json` for public code/data locations. Missing external-model reruns and component-removal tests remain open work.
