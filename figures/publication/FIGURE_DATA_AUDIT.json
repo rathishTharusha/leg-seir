@@ -1,0 +1,16 @@
+{
+  "2023": 60.61490832386956,
+  "2025": 19.96238963651396,
+  "2026": 87.382382324704,
+  "test_origins": 18,
+  "lagged_parameters": 9519,
+  "lagged_mean_horizons": [
+    41.82914958631032,
+    80.51656316596248,
+    103.8743854285066
+  ],
+  "source_files": {
+    "scores.csv": "915990925ab341bbc2221846e7cd408e13b1d90ef5c72ff8e3952d94d7f0ec9d",
+    "learning_rate_freeze.json": "f2bd38eca23fed27991664431e99dc9c351500a4a7dd05ecd454fd220261073f"
+  }
+}

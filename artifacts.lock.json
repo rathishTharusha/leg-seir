@@ -1,0 +1,82 @@
+{
+  "repo_id": "rathishTharusha/leg-seir",
+  "revision": "9c554d043563cb48d26aa047fefe58bea91597e6",
+  "repo_type": "dataset",
+  "files": [
+    {
+      "path": "data/cases_25.csv",
+      "bytes": 86414,
+      "sha256": "9f2fab279a47ff56508fae6880b346735d5f1d15a3d860f970913a55394ac847"
+    },
+    {
+      "path": "data/cases_25_printed_repeat_sensitivity.csv",
+      "bytes": 86620,
+      "sha256": "84ff1108955fef2a38f8a2dde79de132c45a79058726b5c48b5c241089814b55"
+    },
+    {
+      "path": "data/cases_26.csv",
+      "bytes": 89125,
+      "sha256": "b8d7cbb8b56668e5af1ce4311bf4d52765a4f4a4cfc77aa333f0a29b4eb340d7"
+    },
+    {
+      "path": "data/population_audit.json",
+      "bytes": 900,
+      "sha256": "817623e1b1cd46beff89aea4bf04a5018151d5d59bd649d3bdfee7b09879bf1a"
+    },
+    {
+      "path": "evidence/evaluation_outputs.zip",
+      "bytes": 30156093,
+      "sha256": "dbee3421179c45c7b280bcd7032f2a2e83fea480a578aa30a01223411cb8a712"
+    },
+    {
+      "path": "evidence/SOFTWARE_LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "708d951f40fddd9e2272fc3d85dd75f839f0bdd2b66d02ad57493c9d40d6f06d"
+    },
+    {
+      "path": "provenance/environment.json",
+      "bytes": 156,
+      "sha256": "d4e39b5caf3778afaf8bc90460d76daceb23441cd9fe78d6dc1e9d1efff35518"
+    },
+    {
+      "path": "provenance/evaluation_plan.json",
+      "bytes": 4919,
+      "sha256": "2729401d560f9ca4298801a14512208f7699f09cca78641fa696cd0914512e0a"
+    },
+    {
+      "path": "provenance/graph_audit.json",
+      "bytes": 4372,
+      "sha256": "c889ddbd93e2f8c324302d7e6e676d5de4707a4a956c078327031b709516985d"
+    },
+    {
+      "path": "provenance/independent_verification.json",
+      "bytes": 229,
+      "sha256": "56b9b88864d7ab9a5a19b2342efb11913ac08479d5aebbf9bc68cfd58f49d060"
+    },
+    {
+      "path": "provenance/learning_rate_freeze.json",
+      "bytes": 4209,
+      "sha256": "f2bd38eca23fed27991664431e99dc9c351500a4a7dd05ecd454fd220261073f"
+    },
+    {
+      "path": "provenance/pip_freeze.txt",
+      "bytes": 18050,
+      "sha256": "0dfc4f8be509016a02da485a8d037a6d1ead4b96c3839710190db5ea27d8ffe7"
+    },
+    {
+      "path": "provenance/source_manifest.json",
+      "bytes": 271337,
+      "sha256": "3976e939dffa0b0a721195babc835639f4084c6a3c564021b0ae7959b752541c"
+    },
+    {
+      "path": "provenance/target_ledger.json",
+      "bytes": 839339,
+      "sha256": "441f375b3a17732ed5d9b369fc3f09e1f9549d7c650696dfca9f278ff7357762"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4137,
+      "sha256": "f1c5d0c8206da1c548802d230d350d9edb8e36c037e9696d4192981a5e3f9d77"
+    }
+  ]
+}

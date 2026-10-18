@@ -1,0 +1,194 @@
+{
+  "status": "frozen_from_pre2026_only",
+  "selected": {
+    "horizon_full": 0.001,
+    "horizon_graph_off": 0.003,
+    "horizon_seir_off": 0.003,
+    "lagged_full": 0.003,
+    "lagged_graph_off": 0.003,
+    "lagged_seir_off": 0.003,
+    "observer_full": 0.003,
+    "observer_graph_off": 0.003,
+    "observer_seir_off": 0.003,
+    "local_mlp": 0.003,
+    "identity_mlp": 0.001,
+    "local_seir": 0.003,
+    "plain_graph": 0.003,
+    "uniform_mixture": 0.003,
+    "shared_adapter": 0.001
+  },
+  "primary": {
+    "horizon_full": 0.001,
+    "horizon_graph_off": 0.001,
+    "horizon_seir_off": 0.001,
+    "lagged_full": 0.003,
+    "lagged_graph_off": 0.003,
+    "lagged_seir_off": 0.003,
+    "observer_full": 0.003,
+    "observer_graph_off": 0.003,
+    "observer_seir_off": 0.003,
+    "local_mlp": 0.003,
+    "identity_mlp": 0.001,
+    "local_seir": 0.003,
+    "plain_graph": 0.003,
+    "uniform_mixture": 0.003,
+    "shared_adapter": 0.001
+  },
+  "development_scores": [
+    {
+      "name": "horizon_full",
+      "lr": 0.001,
+      "skill": 0.0844722384003157
+    },
+    {
+      "name": "horizon_full",
+      "lr": 0.003,
+      "skill": 0.08420083157408502
+    },
+    {
+      "name": "horizon_graph_off",
+      "lr": 0.001,
+      "skill": 0.07099656285575502
+    },
+    {
+      "name": "horizon_graph_off",
+      "lr": 0.003,
+      "skill": 0.07600435962544784
+    },
+    {
+      "name": "horizon_seir_off",
+      "lr": 0.001,
+      "skill": 0.08469560697760171
+    },
+    {
+      "name": "horizon_seir_off",
+      "lr": 0.003,
+      "skill": 0.08875249307762968
+    },
+    {
+      "name": "identity_mlp",
+      "lr": 0.001,
+      "skill": 0.09393481573148861
+    },
+    {
+      "name": "identity_mlp",
+      "lr": 0.003,
+      "skill": 0.09353653095370919
+    },
+    {
+      "name": "lagged_full",
+      "lr": 0.001,
+      "skill": 0.0883969170929161
+    },
+    {
+      "name": "lagged_full",
+      "lr": 0.003,
+      "skill": 0.09618323666444561
+    },
+    {
+      "name": "lagged_graph_off",
+      "lr": 0.001,
+      "skill": 0.07099656285575502
+    },
+    {
+      "name": "lagged_graph_off",
+      "lr": 0.003,
+      "skill": 0.07600435962544784
+    },
+    {
+      "name": "lagged_seir_off",
+      "lr": 0.001,
+      "skill": 0.08721088672395078
+    },
+    {
+      "name": "lagged_seir_off",
+      "lr": 0.003,
+      "skill": 0.09460698880552947
+    },
+    {
+      "name": "local_mlp",
+      "lr": 0.001,
+      "skill": 0.07070265923774222
+    },
+    {
+      "name": "local_mlp",
+      "lr": 0.003,
+      "skill": 0.0802621251675666
+    },
+    {
+      "name": "local_seir",
+      "lr": 0.001,
+      "skill": 0.07382480229452254
+    },
+    {
+      "name": "local_seir",
+      "lr": 0.003,
+      "skill": 0.07975750244696268
+    },
+    {
+      "name": "observer_full",
+      "lr": 0.001,
+      "skill": 0.08511261624194194
+    },
+    {
+      "name": "observer_full",
+      "lr": 0.003,
+      "skill": 0.08851307045988777
+    },
+    {
+      "name": "observer_graph_off",
+      "lr": 0.001,
+      "skill": 0.0734449854282364
+    },
+    {
+      "name": "observer_graph_off",
+      "lr": 0.003,
+      "skill": 0.079235783091656
+    },
+    {
+      "name": "observer_seir_off",
+      "lr": 0.001,
+      "skill": 0.08469560697760171
+    },
+    {
+      "name": "observer_seir_off",
+      "lr": 0.003,
+      "skill": 0.08875249307762968
+    },
+    {
+      "name": "plain_graph",
+      "lr": 0.001,
+      "skill": 0.08195544044359239
+    },
+    {
+      "name": "plain_graph",
+      "lr": 0.003,
+      "skill": 0.08285346547860843
+    },
+    {
+      "name": "shared_adapter",
+      "lr": 0.001,
+      "skill": 0.08936987801470751
+    },
+    {
+      "name": "shared_adapter",
+      "lr": 0.003,
+      "skill": 0.08198968521176246
+    },
+    {
+      "name": "uniform_mixture",
+      "lr": 0.001,
+      "skill": 0.08701897885134441
+    },
+    {
+      "name": "uniform_mixture",
+      "lr": 0.003,
+      "skill": 0.0884617682168601
+    }
+  ],
+  "code_hash": "3ea0794104f30993d7b0994c17e76e95435def0ad11305cfa535c91828009ed1",
+  "data_hash": "69332f61488130cdf730e08a06f4ab417742c6b57834815d812ca7903662f239",
+  "created_utc": "2026-10-11T04:55:28.422833+00:00",
+  "development_fits": 180,
+  "test_predictions_at_freeze": 0
+}

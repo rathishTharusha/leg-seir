@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Vaswani_2017_Transformer",
+    "url": "https://arxiv.org/pdf/1706.03762",
+    "path": "02_references\\writing_style\\Vaswani_2017_Transformer.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 15,
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697"
+  },
+  {
+    "name": "He_2016_ResNet",
+    "url": "https://arxiv.org/pdf/1512.03385",
+    "path": "02_references\\writing_style\\He_2016_ResNet.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 12,
+    "sha256": "1e0651b6810ecba34a3dbc5b5b0209226f889004607c1f203540a48d64e5a93a"
+  },
+  {
+    "name": "MepoGNN_2023_extended",
+    "url": "https://arxiv.org/pdf/2306.14857",
+    "path": "02_references\\new_related_work\\MepoGNN_2023_extended.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 13,
+    "sha256": "e44764fe94e13a66f3f193aefe67da6c3a5285668cabd575dec194e5750956ff"
+  },
+  {
+    "name": "IeRNN_2020",
+    "url": "https://arxiv.org/pdf/2010.09077",
+    "path": "02_references\\new_related_work\\IeRNN_2020.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 8,
+    "sha256": "fa84f1e1dcee6c864fd30123a8c57f5cb860295b459c26f0dad4a26a4cf4de0d"
+  },
+  {
+    "name": "CausalGNN_2022",
+    "url": "https://cdn.aaai.org/ojs/21479/21479-13-25492-1-2-20220628.pdf",
+    "path": "02_references\\new_related_work\\CausalGNN_2022.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 9,
+    "sha256": "844fa540dd9b6ed18ddf1fe8e58705112f962865095b74782561f91120907e3a"
+  },
+  {
+    "name": "HeatGNN_2024",
+    "url": "https://arxiv.org/pdf/2411.17372",
+    "path": "02_references\\new_related_work\\HeatGNN_2024.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 13,
+    "sha256": "94d6a21eafda3e8d423bd001d3622856213caa010bbe4b19683bbdd47f93aceb"
+  },
+  {
+    "name": "M_Graphormer_2025",
+    "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1012738&type=printable",
+    "path": "02_references\\new_related_work\\M_Graphormer_2025.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 26,
+    "sha256": "529dad91158baa728ded66a6eb8fcf466943c4e106454381df62a25f999c1bf7"
+  },
+  {
+    "name": "Liu_Cao_STGAT_2026",
+    "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1720620/pdf",
+    "path": "02_references\\new_related_work\\Liu_Cao_STGAT_2026.pdf",
+    "status": "downloaded_title_checked",
+    "pages": 21,
+    "sha256": "4841cc924eea0d63d5c4581f65b2b114ed3c59f01755f2e52ee4110c75f54343"
+  }
+]

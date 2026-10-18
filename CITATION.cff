@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and the exact code/data release used."
+title: "LEG-SEIR: Lagged Exposure for Graph-Based Dengue Forecasting"
+type: software
+authors:
+  - name: "LEG-SEIR contributors"
+version: 0.1.0
+date-released: 2026-10-18
+repository-code: "https://github.com/rathishTharusha/leg-seir"
+license: MIT

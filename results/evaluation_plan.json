@@ -1,0 +1,205 @@
+{
+  "status": "frozen_before_fit",
+  "code_hash": "3ea0794104f30993d7b0994c17e76e95435def0ad11305cfa535c91828009ed1",
+  "data_hash": "69332f61488130cdf730e08a06f4ab417742c6b57834815d812ca7903662f239",
+  "source_policy": "frozen v3 unchanged",
+  "configs": [
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "horizon_full",
+      "mode": "router",
+      "graph": true,
+      "decoder": "seir",
+      "parent": "horizon_full",
+      "role": "candidate"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "horizon_graph_off",
+      "mode": "router",
+      "graph": false,
+      "decoder": "seir",
+      "parent": "horizon_full",
+      "role": "removal"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "horizon_seir_off",
+      "mode": "router",
+      "graph": true,
+      "decoder": "direct",
+      "parent": "horizon_full",
+      "role": "removal"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "lagged_full",
+      "mode": "lagged",
+      "graph": true,
+      "decoder": "seir",
+      "parent": "lagged_full",
+      "role": "candidate"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "lagged_graph_off",
+      "mode": "lagged",
+      "graph": false,
+      "decoder": "seir",
+      "parent": "lagged_full",
+      "role": "removal"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "lagged_seir_off",
+      "mode": "lagged",
+      "graph": true,
+      "decoder": "direct",
+      "parent": "lagged_full",
+      "role": "removal"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "state_features": false,
+      "name": "observer_full",
+      "mode": "observer",
+      "graph": true,
+      "decoder": "seir",
+      "parent": "observer_full",
+      "role": "candidate"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "state_features": false,
+      "name": "observer_graph_off",
+      "mode": "observer",
+      "graph": false,
+      "decoder": "seir",
+      "parent": "observer_full",
+      "role": "removal"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "state_features": false,
+      "name": "observer_seir_off",
+      "mode": "router",
+      "graph": true,
+      "decoder": "direct",
+      "parent": "observer_full",
+      "role": "removal"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "local_mlp",
+      "mode": "lgi",
+      "graph": false,
+      "decoder": "none",
+      "role": "baseline"
+    },
+    {
+      "identity": true,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "identity_mlp",
+      "mode": "lgi",
+      "graph": false,
+      "decoder": "none",
+      "role": "baseline"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "local_seir",
+      "mode": "lgi",
+      "graph": false,
+      "decoder": "seir",
+      "role": "baseline"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "plain_graph",
+      "mode": "lgi",
+      "graph": true,
+      "decoder": "none",
+      "role": "baseline"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "fixed",
+      "name": "uniform_mixture",
+      "mode": "router",
+      "graph": true,
+      "decoder": "seir",
+      "role": "baseline"
+    },
+    {
+      "identity": false,
+      "differences": true,
+      "router_style": "horizon",
+      "name": "shared_adapter",
+      "mode": "adapters",
+      "graph": true,
+      "decoder": "seir",
+      "district_conditioned": false,
+      "adapter_rank": 8,
+      "adapter_no_decay": true,
+      "role": "baseline"
+    }
+  ],
+  "development_years": [
+    2023,
+    2025
+  ],
+  "learning_rates": [
+    0.001,
+    0.003
+  ],
+  "development_seeds": [
+    0,
+    1,
+    2
+  ],
+  "final_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 300,
+  "patience": 40,
+  "batch": 128,
+  "width": 64,
+  "selection": "maximum mean fold skill vs persistence across folds and seeds; exact tie lower LR",
+  "primary_removals": "same selected LR as parent; separately selected removal LR sensitivity if different",
+  "test": "2026 retrospective rolling forecasts, no parameter refit/tuning from 2026 targets",
+  "source_cutoff": "attached version1 archive through volume53 report33, not complete calendar2026",
+  "smoke": false,
+  "expected_development_fits": 180,
+  "expected_primary_final_fits": 75,
+  "max_extra_removal_sensitivity_fits": 30
+}

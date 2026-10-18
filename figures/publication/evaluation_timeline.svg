@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="409.3475pt" height="122.4pt" viewBox="0 0 409.3475 122.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-11T11:51:49.443638</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 122.4 
+L 409.3475 122.4 
+L 409.3475 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 68.5875 98.2 
+L 402.1475 98.2 
+L 402.1475 7.2 
+L 68.5875 7.2 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 73.220278 24.316667 
+L 304.859167 24.316667 
+L 304.859167 16.083333 
+L 73.220278 16.083333 
+z
+" clip-path="url(#p2baff1674f)" style="fill: #6c90ad"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 304.859167 24.316667 
+L 328.023056 24.316667 
+L 328.023056 16.083333 
+L 304.859167 16.083333 
+z
+" clip-path="url(#p2baff1674f)" style="fill: #d8ac58"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 73.220278 45.983333 
+L 351.186944 45.983333 
+L 351.186944 37.75 
+L 73.220278 37.75 
+z
+" clip-path="url(#p2baff1674f)" style="fill: #6c90ad"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 351.186944 45.983333 
+L 374.350833 45.983333 
+L 374.350833 37.75 
+L 351.186944 37.75 
+z
+" clip-path="url(#p2baff1674f)" style="fill: #d8ac58"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 73.220278 67.65 
+L 351.186944 67.65 
+L 351.186944 59.416667 
+L 73.220278 59.416667 
+z
+" clip-path="url(#p2baff1674f)" style="fill: #6c90ad"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 351.186944 67.65 
+L 374.350833 67.65 
+L 374.350833 59.416667 
+L 351.186944 59.416667 
+z
+" clip-path="url(#p2baff1674f)" style="fill: #d8ac58"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 374.350833 67.65 
+L 397.514722 67.65 
+L 397.514722 59.416667 
+L 374.350833 59.416667 
+z
+" clip-path="url(#p2baff1674f)" style="fill: #569b89"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m3986cbf8b9" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m3986cbf8b9" x="73.220278" y="98.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="73.220278" y="112.797656" transform="rotate(-0 73.220278 112.797656)">2013</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m3986cbf8b9" x="281.695278" y="98.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="281.695278" y="112.797656" transform="rotate(-0 281.695278 112.797656)">2022</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m3986cbf8b9" x="328.023056" y="98.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="328.023056" y="112.797656" transform="rotate(-0 328.023056 112.797656)">2024</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m3986cbf8b9" x="374.350833" y="98.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="374.350833" y="112.797656" transform="rotate(-0 374.350833 112.797656)">2026</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="md89aa4ec4c" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md89aa4ec4c" x="68.5875" y="20.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="61.5875" y="23.999219" transform="rotate(-0 61.5875 23.999219)">Develop. A</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#md89aa4ec4c" x="68.5875" y="41.866667" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="61.5875" y="45.665885" transform="rotate(-0 61.5875 45.665885)">Develop. B</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#md89aa4ec4c" x="68.5875" y="63.533333" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="61.5875" y="67.332552" transform="rotate(-0 61.5875 67.332552)">Final</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_10">
+    <path d="M 68.5875 98.2 
+L 402.1475 98.2 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #4c7492" x="165.875833" y="83.033333" transform="rotate(-0 165.875833 83.033333)">Train</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #906b26" x="281.695278" y="83.033333" transform="rotate(-0 281.695278 83.033333)">Validate</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #387b6b" x="374.350833" y="83.033333" transform="rotate(-0 374.350833 83.033333)">Test</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2baff1674f">
+   <rect x="68.5875" y="7.2" width="333.56" height="91"/>
+  </clipPath>
+ </defs>
+</svg>

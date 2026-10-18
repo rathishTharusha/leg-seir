@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leg-seir"
+version = "0.1.0"
+description = "Lagged-exposure graph-SEIR dengue forecasting and reproducible experiments"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["numpy", "torch"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+leg_seir = ["_frozen/*.py"]

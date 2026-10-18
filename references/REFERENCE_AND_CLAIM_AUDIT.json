@@ -1,0 +1,11 @@
+{
+  "main_reference_count": 26,
+  "supplement_reference_count": 50,
+  "total_research_records": 50,
+  "unreferenced_bibliography_keys": [],
+  "datasets_in_bibliography": false,
+  "github_url": "https://github.com/rathishTharusha/dengue-forecasting-gnn",
+  "huggingface_url": null,
+  "pending": "User has not supplied official Hugging Face URL; manuscript footnote states URL pending release.",
+  "audit_scope": "Every prose unit mapped to evidence basis; not a claim that bibliographic retrieval certifies all scientific interpretations."
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Two-epoch one-seed CPU execution check, NOT paper results",
+  "status": "passed",
+  "fits": 45,
+  "code_hash": "e2bf83b35a48fe019fe3d74bf979e6a19eaaa30524bcf8e230b8cb7a921d675f",
+  "data_hash": "28741bf5fb11f31adbdd13cd3d94bcf577312b24de416c2d6b342a4c4d2ae3b9",
+  "note": "Notebook cell IDs added after execution; code-cell contents and identity are unchanged."
+}

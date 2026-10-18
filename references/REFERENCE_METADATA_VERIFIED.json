@@ -1,0 +1,2948 @@
+[
+  {
+    "key": "agcrn2020",
+    "title": "Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting",
+    "authors": [
+      "Bai, Lei",
+      "Yao, Lina",
+      "Li, Can",
+      "Wang, Xianzhi",
+      "Wang, Can"
+    ],
+    "url": "https://arxiv.org/abs/2007.02842",
+    "abstract": "Abstract: Modeling complex spatial and temporal correlations in the correlated time series data is indispensable for understanding the traffic dynamics and predicting the future status of an evolving traffic system. Recent works focus on designing complicated graph neural network architectures to capture shared patterns with the help of pre-defined graphs. In this paper, we argue that learning node-specific patterns is essential for traffic forecasting while the pre-defined graph is avoidable. To this end, we propose two adaptive modules for enhancing Graph Convolutional Network (GCN) with new capabilities: 1) a Node Adaptive Parameter Learning (NAPL) module to capture node-specific patterns; 2) a Data Adaptive Graph Generation (DAGG) module to infer the inter-dependencies among different traffic series automatically. We further propose an Adaptive Graph Convolutional Recurrent Network (AGCRN) to capture fine-grained spatial and temporal correlations in traffic series automatically based on the two modules and recurrent networks. Our experiments on two real-world traffic datasets show AGCRN outperforms state-of-the-art by a significant margin without pre-defined graphs about spatial connections.",
+    "bib": "@misc{agcrn2020,\n author={Bai, Lei and Yao, Lina and Li, Can and Wang, Xianzhi and Wang, Can},\n title={Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting},\n year={2020}, howpublished={arXiv:2007.02842}, url={https://arxiv.org/abs/2007.02842}}\n",
+    "pdf_path": "02_references/new_related_work/agcrn2020.pdf",
+    "pages": 16,
+    "sha256": "ce287f525ccae2e793d0238ab4aa176c59698c24f420683fd8fb5f6105828a9e",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "mtgnn2020",
+    "title": "Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks",
+    "authors": [
+      "Wu, Zonghan",
+      "Pan, Shirui",
+      "Long, Guodong",
+      "Jiang, Jing",
+      "Chang, Xiaojun",
+      "Zhang, Chengqi"
+    ],
+    "url": "https://arxiv.org/abs/2005.11650",
+    "abstract": "Abstract: Modeling multivariate time series has long been a subject that has attracted researchers from a diverse range of fields including economics, finance, and traffic. A basic assumption behind multivariate time series forecasting is that its variables depend on one another but, upon looking closely, it is fair to say that existing methods fail to fully exploit latent spatial dependencies between pairs of variables. In recent years, meanwhile, graph neural networks (GNNs) have shown high capability in handling relational dependencies. GNNs require well-defined graph structures for information propagation which means they cannot be applied directly for multivariate time series where the dependencies are not known in advance. In this paper, we propose a general graph neural network framework designed specifically for multivariate time series data. Our approach automatically extracts the uni-directed relations among variables through a graph learning module, into which external knowledge like variable attributes can be easily integrated. A novel mix-hop propagation layer and a dilated inception layer are further proposed to capture the spatial and temporal dependencies within the time series. The graph learning, graph convolution, and temporal convolution modules are jointly learned in an end-to-end framework. Experimental results show that our proposed model outperforms the state-of-the-art baseline methods on 3 of 4 benchmark datasets and achieves on-par performance with other approaches on two traffic datasets which provide extra structural information.",
+    "bib": "@misc{mtgnn2020,\n author={Wu, Zonghan and Pan, Shirui and Long, Guodong and Jiang, Jing and Chang, Xiaojun and Zhang, Chengqi},\n title={Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks},\n year={2020}, howpublished={arXiv:2005.11650}, url={https://arxiv.org/abs/2005.11650}}\n",
+    "pdf_path": "02_references/new_related_work/mtgnn2020.pdf",
+    "pages": 11,
+    "sha256": "c64fa5b79bed0ac3a35515ced04fbaf9e3c1e90a757f84e68273f8a1e7ae4e67",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "acm2022",
+    "title": "Revisiting Heterophily For Graph Neural Networks",
+    "authors": [
+      "Luan, Sitao",
+      "Hua, Chenqing",
+      "Lu, Qincheng",
+      "Zhu, Jiaqi",
+      "Zhao, Mingde",
+      "Zhang, Shuyuan",
+      "Chang, Xiao-Wen",
+      "Precup, Doina"
+    ],
+    "url": "https://arxiv.org/abs/2210.07606",
+    "abstract": "Abstract: Graph Neural Networks (GNNs) extend basic Neural Networks (NNs) by using graph structures based on the relational inductive bias (homophily assumption). While GNNs have been commonly believed to outperform NNs in real-world tasks, recent work has identified a non-trivial set of datasets where their performance compared to NNs is not satisfactory. Heterophily has been considered the main cause of this empirical observation and numerous works have been put forward to address it. In this paper, we first revisit the widely used homophily metrics and point out that their consideration of only graph-label consistency is a shortcoming. Then, we study heterophily from the perspective of post-aggregation node similarity and define new homophily metrics, which are potentially advantageous compared to existing ones. Based on this investigation, we prove that some harmful cases of heterophily can be effectively addressed by local diversification operation. Then, we propose the Adaptive Channel Mixing (ACM), a framework to adaptively exploit aggregation, diversification and identity channels node-wisely to extract richer localized information for diverse node heterophily situations. ACM is more powerful than the commonly used uni-channel framework for node classification tasks on heterophilic graphs and is easy to be implemented in baseline GNN layers. When evaluated on 10 benchmark node classification tasks, ACM-augmented baselines consistently achieve significant performance gain, exceeding state-of-the-art GNNs on most tasks without incurring significant computational burden.",
+    "bib": "@misc{acm2022,\n author={Luan, Sitao and Hua, Chenqing and Lu, Qincheng and Zhu, Jiaqi and Zhao, Mingde and Zhang, Shuyuan and Chang, Xiao-Wen and Precup, Doina},\n title={Revisiting Heterophily For Graph Neural Networks},\n year={2022}, howpublished={arXiv:2210.07606}, url={https://arxiv.org/abs/2210.07606}}\n",
+    "pdf_path": "02_references/new_related_work/acm2022.pdf",
+    "pages": 38,
+    "sha256": "478dc0a82d778742f789a35fff84ec0eea51ee4f95923460245e4c72b8b1f300",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "stid2022",
+    "title": "Spatial-Temporal Identity: A Simple yet Effective Baseline for Multivariate Time Series Forecasting",
+    "authors": [
+      "Shao, Zezhi",
+      "Zhang, Zhao",
+      "Wang, Fei",
+      "Wei, Wei",
+      "Xu, Yongjun"
+    ],
+    "url": "https://arxiv.org/abs/2208.05233",
+    "abstract": "Abstract: Multivariate Time Series (MTS) forecasting plays a vital role in a wide range of applications. Recently, Spatial-Temporal Graph Neural Networks (STGNNs) have become increasingly popular MTS forecasting methods due to their state-of-the-art performance. However, recent works are becoming more sophisticated with limited performance improvements. This phenomenon motivates us to explore the critical factors of MTS forecasting and design a model that is as powerful as STGNNs, but more concise and efficient. In this paper, we identify the indistinguishability of samples in both spatial and temporal dimensions as a key bottleneck, and propose a simple yet effective baseline for MTS forecasting by attaching Spatial and Temporal IDentity information (STID), which achieves the best performance and efficiency simultaneously based on simple Multi-Layer Perceptrons (MLPs). These results suggest that we can design efficient and effective models as long as they solve the indistinguishability of samples, without being limited to STGNNs.",
+    "bib": "@misc{stid2022,\n author={Shao, Zezhi and Zhang, Zhao and Wang, Fei and Wei, Wei and Xu, Yongjun},\n title={Spatial-Temporal Identity: A Simple yet Effective Baseline for Multivariate Time Series Forecasting},\n year={2022}, howpublished={arXiv:2208.05233}, url={https://arxiv.org/abs/2208.05233}}\n",
+    "pdf_path": "02_references/new_related_work/stid2022.pdf",
+    "pages": 5,
+    "sha256": "af3c9e4f3fed4a62744f2c55ff42c2793a8568c6d8d594fcbe228e468c52d00b",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "stan2020",
+    "title": "STAN: Spatio-Temporal Attention Network for Pandemic Prediction Using Real World Evidence",
+    "authors": [
+      "Gao, Junyi",
+      "Sharma, Rakshith",
+      "Qian, Cheng",
+      "Glass, Lucas M.",
+      "Spaeder, Jeffrey",
+      "Romberg, Justin",
+      "Sun, Jimeng",
+      "Xiao, Cao"
+    ],
+    "url": "https://arxiv.org/abs/2008.04215",
+    "abstract": "Abstract: Objective: The COVID-19 pandemic has created many challenges that need immediate attention. Various epidemiological and deep learning models have been developed to predict the COVID-19 outbreak, but all have limitations that affect the accuracy and robustness of the predictions. Our method aims at addressing these limitations and making earlier and more accurate pandemic outbreak predictions by (1) using patients' EHR data from different counties and states that encode local disease status and medical resource utilization condition; (2) considering demographic similarity and geographical proximity between locations; and (3) integrating pandemic transmission dynamics into deep learning models. Materials and Methods: We proposed a spatio-temporal attention network (STAN) for pandemic prediction. It uses an attention-based graph convolutional network to capture geographical and temporal trends and predict the number of cases for a fixed number of days into the future. We also designed a physical law-based loss term for enhancing long-term prediction. STAN was tested using both massive real-world patient data and open source COVID-19 statistics provided by Johns Hopkins university across all U.S. counties. Results: STAN outperforms epidemiological modeling methods such as SIR and SEIR and deep learning models on both long-term and short-term predictions, achieving up to 87% lower mean squared error compared to the best baseline prediction model. Conclusions: By using information from real-world patient data and geographical data, STAN can better capture the disease status and medical resource utilization information and thus provides more accurate pandemic modeling. With pandemic transmission law based regularization, STAN also achieves good long-term prediction performance.",
+    "bib": "@misc{stan2020,\n author={Gao, Junyi and Sharma, Rakshith and Qian, Cheng and Glass, Lucas M. and Spaeder, Jeffrey and Romberg, Justin and Sun, Jimeng and Xiao, Cao},\n title={STAN: Spatio-Temporal Attention Network for Pandemic Prediction Using Real World Evidence},\n year={2020}, howpublished={arXiv:2008.04215}, url={https://arxiv.org/abs/2008.04215}}\n",
+    "pdf_path": "02_references/new_related_work/stan2020.pdf",
+    "pages": 33,
+    "sha256": "c0ef5b30bbafcdc5a3ae0ed109fd28f9277c8bf79e68c2658fc59b8529d9213f",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "mpstan2023",
+    "title": "MPSTAN: Metapopulation-based Spatio-Temporal Attention Network for Epidemic Forecasting",
+    "authors": [
+      "Mao, Junkai",
+      "Han, Yuexing",
+      "Wang, Bing"
+    ],
+    "url": "https://arxiv.org/abs/2306.12436",
+    "abstract": "Abstract: Accurate epidemic forecasting plays a vital role for governments in developing effective prevention measures for suppressing epidemics. Most of the present spatio-temporal models cannot provide a general framework for stable, and accurate forecasting of epidemics with diverse evolution trends. Incorporating epidemiological domain knowledge ranging from single-patch to multi-patch into neural networks is expected to improve forecasting accuracy. However, relying solely on single-patch knowledge neglects inter-patch interactions, while constructing multi-patch knowledge is challenging without population mobility data. To address the aforementioned problems, we propose a novel hybrid model called Metapopulation-based Spatio-Temporal Attention Network (MPSTAN). This model aims to improve the accuracy of epidemic forecasting by incorporating multi-patch epidemiological knowledge into a spatio-temporal model and adaptively defining inter-patch interactions. Moreover, we incorporate inter-patch epidemiological knowledge into both the model construction and loss function to help the model learn epidemic transmission dynamics. Extensive experiments conducted on two representative datasets with different epidemiological evolution trends demonstrate that our proposed model outperforms the baselines and provides more accurate and stable short- and long-term forecasting. We confirm the effectiveness of domain knowledge in the learning model and investigate the impact of different ways of integrating domain knowledge on forecasting. We observe that using domain knowledge in both model construction and loss functions leads to more efficient forecasting, and selecting appropriate domain knowledge can improve accuracy further.",
+    "bib": "@misc{mpstan2023,\n author={Mao, Junkai and Han, Yuexing and Wang, Bing},\n title={MPSTAN: Metapopulation-based Spatio-Temporal Attention Network for Epidemic Forecasting},\n year={2023}, howpublished={arXiv:2306.12436}, url={https://arxiv.org/abs/2306.12436}}\n",
+    "pdf_path": "02_references/new_related_work/mpstan2023.pdf",
+    "pages": 14,
+    "sha256": "240cf7c20e586be9339af01fff525bfe38fe576cb4c4dbb84ddfdf7ee079d090",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "hybrid2026",
+    "title": "How (Not) to Hybridize Neural and Mechanistic Models for Epidemiological Forecasting",
+    "authors": [
+      "Su, Yiqi",
+      "Lee, Ray",
+      "Cui, Jiaming",
+      "Ramakrishnan, Naren"
+    ],
+    "url": "https://arxiv.org/abs/2602.06323",
+    "abstract": "Abstract: Epidemiological forecasting from surveillance data is a hard problem and hybridizing mechanistic compartmental models with neural models is a natural direction. The mechanistic structure helps keep trajectories epidemiologically plausible, while neural components can capture non-stationary, data-adaptive effects. In practice, however, many seemingly straightforward couplings fail under partial observability and continually shifting transmission dynamics driven by behavior, waning immunity, seasonality, and interventions. We catalog these failure modes and show that robust performance requires making non-stationarity explicit: we extract multi-scale structure from the observed infection series and use it as an interpretable control signal for a controlled neural ODE coupled to an epidemiological model. Concretely, we decompose infections into trend, seasonal, and residual components and use these signals to drive continuous-time latent dynamics while jointly forecasting and inferring time-varying transmission, recovery, and immunity-loss rates. Across early outbreak and multi-wave regimes, our approach attains the lowest RMSE on five datasets (21-63% reduction over the strongest default-configured baseline), achieves the best peak detection accuracy, and infers time-varying epidemiological rates within ground-truth ranges, without relying on auxiliary covariates.",
+    "bib": "@misc{hybrid2026,\n author={Su, Yiqi and Lee, Ray and Cui, Jiaming and Ramakrishnan, Naren},\n title={How (Not) to Hybridize Neural and Mechanistic Models for Epidemiological Forecasting},\n year={2026}, howpublished={arXiv:2602.06323}, url={https://arxiv.org/abs/2602.06323}}\n",
+    "pdf_path": "02_references/new_related_work/hybrid2026.pdf",
+    "pages": 20,
+    "sha256": "4725887b32cf5b35e90a787dbccad9594b8f36ba274f5c5b5411450bf9f917e3",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "ude2020",
+    "title": "Universal Differential Equations for Scientific Machine Learning",
+    "authors": [
+      "Rackauckas, Christopher",
+      "Ma, Yingbo",
+      "Martensen, Julius",
+      "Warner, Collin",
+      "Zubov, Kirill",
+      "Supekar, Rohit",
+      "Skinner, Dominic",
+      "Ramadhan, Ali",
+      "Edelman, Alan"
+    ],
+    "url": "https://arxiv.org/abs/2001.04385",
+    "abstract": "Abstract: In the context of science, the well-known adage \"a picture is worth a thousand words\" might well be \"a model is worth a thousand datasets.\" In this manuscript we introduce the SciML software ecosystem as a tool for mixing the information of physical laws and scientific models with data-driven machine learning approaches. We describe a mathematical object, which we denote universal differential equations (UDEs), as the unifying framework connecting the ecosystem. We show how a wide variety of applications, from automatically discovering biological mechanisms to solving high-dimensional Hamilton-Jacobi-Bellman equations, can be phrased and efficiently handled through the UDE formalism and its tooling. We demonstrate the generality of the software tooling to handle stochasticity, delays, and implicit constraints. This funnels the wide variety of SciML applications into a core set of training mechanisms which are highly optimized, stabilized for stiff equations, and compatible with distributed parallelism and GPU accelerators.",
+    "bib": "@misc{ude2020,\n author={Rackauckas, Christopher and Ma, Yingbo and Martensen, Julius and Warner, Collin and Zubov, Kirill and Supekar, Rohit and Skinner, Dominic and Ramadhan, Ali and Edelman, Alan},\n title={Universal Differential Equations for Scientific Machine Learning},\n year={2020}, howpublished={arXiv:2001.04385}, url={https://arxiv.org/abs/2001.04385}}\n",
+    "pdf_path": "02_references/new_related_work/ude2020.pdf",
+    "pages": 55,
+    "sha256": "d3600afe6dda6ba2aae3c94e3f04ad9dac884a4b3d7ff2f4cfc8cdaf9f1e147e",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "nbeats2020",
+    "title": "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting",
+    "authors": [
+      "Oreshkin, Boris N.",
+      "Carpov, Dmitri",
+      "Chapados, Nicolas",
+      "Bengio, Yoshua"
+    ],
+    "url": "https://arxiv.org/abs/1905.10437",
+    "abstract": "Abstract: We focus on solving the univariate times series point forecasting problem using deep learning. We propose a deep neural architecture based on backward and forward residual links and a very deep stack of fully-connected layers. The architecture has a number of desirable properties, being interpretable, applicable without modification to a wide array of target domains, and fast to train. We test the proposed architecture on several well-known datasets, including M3, M4 and TOURISM competition datasets containing time series from diverse domains. We demonstrate state-of-the-art performance for two configurations of N-BEATS for all the datasets, improving forecast accuracy by 11% over a statistical benchmark and by 3% over last year's winner of the M4 competition, a domain-adjusted hand-crafted hybrid between neural network and statistical time series models. The first configuration of our model does not employ any time-series-specific components and its performance on heterogeneous datasets strongly suggests that, contrarily to received wisdom, deep learning primitives such as residual blocks are by themselves sufficient to solve a wide range of forecasting problems. Finally, we demonstrate how the proposed architecture can be augmented to provide outputs that are interpretable without considerable loss in accuracy.",
+    "bib": "@misc{nbeats2020,\n author={Oreshkin, Boris N. and Carpov, Dmitri and Chapados, Nicolas and Bengio, Yoshua},\n title={N-BEATS: Neural basis expansion analysis for interpretable time series forecasting},\n year={2019}, howpublished={arXiv:1905.10437}, url={https://arxiv.org/abs/1905.10437}}\n",
+    "pdf_path": "02_references/new_related_work/nbeats2020.pdf",
+    "pages": 31,
+    "sha256": "09878c6971ee060b7dc767a33282fe04c01eada8531dcac548ecae3dac1bb3e7",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "epignn2022",
+    "title": "EpiGNN: Exploring Spatial Transmission with Graph Neural Network for Regional Epidemic Forecasting",
+    "authors": [
+      "Xie, Feng",
+      "Zhang, Zhong",
+      "Li, Liang",
+      "Zhou, Bin",
+      "Tan, Yusong"
+    ],
+    "url": "https://arxiv.org/abs/2208.11517",
+    "abstract": "Abstract: Epidemic forecasting is the key to effective control of epidemic transmission and helps the world mitigate the crisis that threatens public health. To better understand the transmission and evolution of epidemics, we propose EpiGNN, a graph neural network-based model for epidemic forecasting. Specifically, we design a transmission risk encoding module to characterize local and global spatial effects of regions in epidemic processes and incorporate them into the model. Meanwhile, we develop a Region-Aware Graph Learner (RAGL) that takes transmission risk, geographical dependencies, and temporal information into account to better explore spatial-temporal dependencies and makes regions aware of related regions' epidemic situations. The RAGL can also combine with external resources, such as human mobility, to further improve prediction performance. Comprehensive experiments on five real-world epidemic-related datasets (including influenza and COVID-19) demonstrate the effectiveness of our proposed method and show that EpiGNN outperforms state-of-the-art baselines by 9.48% in RMSE.",
+    "bib": "@misc{epignn2022,\n author={Xie, Feng and Zhang, Zhong and Li, Liang and Zhou, Bin and Tan, Yusong},\n title={EpiGNN: Exploring Spatial Transmission with Graph Neural Network for Regional Epidemic Forecasting},\n year={2022}, howpublished={arXiv:2208.11517}, url={https://arxiv.org/abs/2208.11517}}\n",
+    "pdf_path": "02_references/new_related_work/epignn2022.pdf",
+    "pages": 16,
+    "sha256": "e0fd652e1a0cf64c4262b29eeb5f3e619a293df1c1ec110d9d4d96d61bd3192f",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "glnn2022",
+    "title": "Graph-less Neural Networks: Teaching Old MLPs New Tricks via Distillation",
+    "authors": [
+      "Zhang, Shichang",
+      "Liu, Yozen",
+      "Sun, Yizhou",
+      "Shah, Neil"
+    ],
+    "url": "https://arxiv.org/abs/2110.08727",
+    "abstract": "Abstract: Graph Neural Networks (GNNs) are popular for graph machine learning and have shown great results on wide node classification tasks. Yet, they are less popular for practical deployments in the industry owing to their scalability challenges incurred by data dependency. Namely, GNN inference depends on neighbor nodes multiple hops away from the target, and fetching them burdens latency-constrained applications. Existing inference acceleration methods like pruning and quantization can speed up GNNs by reducing Multiplication-and-ACcumulation (MAC) operations, but the improvements are limited given the data dependency is not resolved. Conversely, multi-layer perceptrons (MLPs) have no graph dependency and infer much faster than GNNs, even though they are less accurate than GNNs for node classification in general. Motivated by these complementary strengths and weaknesses, we bring GNNs and MLPs together via knowledge distillation (KD). Our work shows that the performance of MLPs can be improved by large margins with GNN KD. We call the distilled MLPs Graph-less Neural Networks (GLNNs) as they have no inference graph dependency. We show that GLNNs with competitive accuracy infer faster than GNNs by 146X-273X and faster than other acceleration methods by 14X-27X. Under a production setting involving both transductive and inductive predictions across 7 datasets, GLNN accuracies improve over stand-alone MLPs by 12.36% on average and match GNNs on 6/7 datasets. Comprehensive analysis shows when and why GLNNs can achieve competitive accuracies to GNNs and suggests GLNN as a handy choice for latency-constrained applications.",
+    "bib": "@misc{glnn2022,\n author={Zhang, Shichang and Liu, Yozen and Sun, Yizhou and Shah, Neil},\n title={Graph-less Neural Networks: Teaching Old MLPs New Tricks via Distillation},\n year={2021}, howpublished={arXiv:2110.08727}, url={https://arxiv.org/abs/2110.08727}}\n",
+    "pdf_path": "02_references/new_related_work/glnn2022.pdf",
+    "pages": 21,
+    "sha256": "1630c955f40c5c25568d66b907d936bbec96160ca21ddfa1074a70934b33c44d",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "transformer2017",
+    "title": "Attention Is All You Need",
+    "authors": [
+      "Vaswani, Ashish",
+      "Shazeer, Noam",
+      "Parmar, Niki",
+      "Uszkoreit, Jakob",
+      "Jones, Llion",
+      "Gomez, Aidan N.",
+      "Kaiser, Lukasz",
+      "Polosukhin, Illia"
+    ],
+    "url": "https://arxiv.org/abs/1706.03762",
+    "abstract": "Abstract: The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+    "bib": "@misc{transformer2017,\n author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},\n title={Attention Is All You Need},\n year={2017}, howpublished={arXiv:1706.03762}, url={https://arxiv.org/abs/1706.03762}}\n",
+    "pdf_path": "02_references/new_related_work/transformer2017.pdf",
+    "pages": 15,
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "resnet2016",
+    "title": "Deep Residual Learning for Image Recognition",
+    "authors": [
+      "He, Kaiming",
+      "Zhang, Xiangyu",
+      "Ren, Shaoqing",
+      "Sun, Jian"
+    ],
+    "url": "https://arxiv.org/abs/1512.03385",
+    "abstract": "Abstract: Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+    "bib": "@misc{resnet2016,\n author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},\n title={Deep Residual Learning for Image Recognition},\n year={2015}, howpublished={arXiv:1512.03385}, url={https://arxiv.org/abs/1512.03385}}\n",
+    "pdf_path": "02_references/new_related_work/resnet2016.pdf",
+    "pages": 12,
+    "sha256": "1e0651b6810ecba34a3dbc5b5b0209226f889004607c1f203540a48d64e5a93a",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "mgraphormer2025",
+    "title": "Multi-region infectious disease prediction modeling based on spatio-temporal graph neural network and the dynamic model",
+    "authors": [
+      "Xiaoyi Wang",
+      "Zhen Jin"
+    ],
+    "url": "https://doi.org/10.1371/journal.pcbi.1012738",
+    "crossref_metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ],
+        "date-time": "2026-10-07T12:53:32Z",
+        "timestamp": 1791377612078,
+        "version": "4.3.2"
+      },
+      "reference-count": 51,
+      "publisher": "Public Library of Science (PLoS)",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                1,
+                9
+              ]
+            ],
+            "date-time": "2025-01-09T00:00:00Z",
+            "timestamp": 1736380800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "name": "Key Programs of the National Natural Science Foundation of China",
+          "award": [
+            "12231012"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "12231012"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Joint Fund Priority Support Program of the National Natural Science Foundation of China",
+          "award": [
+            "U23A20331"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "U23A20331"
+              ]
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.ploscompbiol.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "PLoS Comput Biol"
+      ],
+      "abstract": "<jats:p>Human mobility between different regions is a major factor in large-scale outbreaks of infectious diseases. Deep learning models incorporating infectious disease transmission dynamics for predicting the spread of multi-regional outbreaks due to human mobility have become a hot research topic. In this study, we incorporate the Graph Transformer Neural Network and graph learning mechanisms into a metapopulation SIR model to build a hybrid framework, Metapopulation Graph Transformer Neural Network (M-Graphormer), for high-dimensional parameter estimation and multi-regional epidemic prediction. The framework effectively solves the problem that existing models may lose some hidden spatial dependencies in the data when dealing with the dynamic graph structure of the network due to human mobility. We performed multi-wave infectious disease prediction in multiple regions based on real epidemic data. The results show that the framework is capable of performing high-dimensional parameter estimation and accurately predicting epidemic transmission dynamics in multiple regions even with low data quality. In addition, we retrospectively extrapolate the temporal evolution patterns of contact rate under different interventions implemented in different regions, reflecting the dynamics of intervention intensity and the need for flexibility in adjusting interventions in different regions. To provide early warning of infectious disease transmission, we retrospectively predicted the arrival time of infectious diseases using data from the early stages of outbreaks.</jats:p>",
+      "DOI": "10.1371/journal.pcbi.1012738",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            9
+          ]
+        ],
+        "date-time": "2025-01-09T18:24:33Z",
+        "timestamp": 1736447073000
+      },
+      "page": "e1012738",
+      "update-policy": "https://doi.org/10.1371/journal.pcbi.corrections_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 21,
+      "title": [
+        "Multi-region infectious disease prediction modeling based on spatio-temporal graph neural network and the dynamic model"
+      ],
+      "prefix": "10.1371",
+      "volume": "21",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-1628-5744",
+          "authenticated-orcid": true,
+          "given": "Xiaoyi",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9763-707X",
+          "authenticated-orcid": true,
+          "given": "Zhen",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "340",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            9
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref001",
+          "article-title": "Infectious disease implications of large-scale migration of Venezuelan nationals",
+          "volume": "25",
+          "author": "AR Tuite",
+          "year": "2018",
+          "journal-title": "J Travel Med"
+        },
+        {
+          "issue": "6490",
+          "key": "pcbi.1012738.ref002",
+          "doi-asserted-by": "crossref",
+          "first-page": "493",
+          "DOI": "10.1126/science.abb4218",
+          "article-title": "The effect of human mobility and control measures on the COVID-19 epidemic in China",
+          "volume": "368",
+          "author": "MU Kraemer",
+          "year": "2020",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "6",
+          "key": "pcbi.1012738.ref003",
+          "doi-asserted-by": "crossref",
+          "first-page": "cnaa041",
+          "DOI": "10.1093/comnet/cnaa041",
+          "article-title": "The impact of human mobility networks on the global spread of COVID-19",
+          "volume": "8",
+          "author": "MG HaË?ncean",
+          "year": "2020",
+          "journal-title": "Journal of Complex Networks"
+        },
+        {
+          "issue": "44",
+          "key": "pcbi.1012738.ref004",
+          "doi-asserted-by": "crossref",
+          "first-page": "27087",
+          "DOI": "10.1073/pnas.2010836117",
+          "article-title": "Mobile device data reveal the dynamics in a positive relationship between human mobility and COVID-19 infections",
+          "volume": "117",
+          "author": "C Xiong",
+          "year": "2020",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref005",
+          "doi-asserted-by": "crossref",
+          "first-page": "20742",
+          "DOI": "10.1038/s41598-020-77751-2",
+          "article-title": "Quantifying human mobility behaviour changes during the COVID-19 outbreak in the United States",
+          "volume": "10",
+          "author": "Y Pan",
+          "year": "2020",
+          "journal-title": "Sci Rep"
+        },
+        {
+          "issue": "6557",
+          "key": "pcbi.1012738.ref006",
+          "doi-asserted-by": "crossref",
+          "first-page": "889",
+          "DOI": "10.1126/science.abj0113",
+          "article-title": "Spatiotemporal invasion dynamics of SARS-CoV-2 lineage B. 1.1. 7 emergence",
+          "volume": "373",
+          "author": "MU Kraemer",
+          "year": "2021",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "3",
+          "key": "pcbi.1012738.ref007",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.3390/math7030304",
+          "article-title": "Role of Media and Effects of Infodemics and Escapes in the Spatial Spread of Epidemics: A Stochastic Multi-Region Model with Optimal Control Approach",
+          "volume": "7",
+          "author": "F El Kihal",
+          "year": "2019",
+          "journal-title": "Mathematics"
+        },
+        {
+          "issue": "23",
+          "key": "pcbi.1012738.ref008",
+          "article-title": "The Effect of Local and Global Interventions on Epidemic Spreading",
+          "volume": "18",
+          "author": "J Fan",
+          "year": "2021",
+          "journal-title": "Int J Environ Res Public Health"
+        },
+        {
+          "key": "pcbi.1012738.ref009",
+          "doi-asserted-by": "crossref",
+          "first-page": "103010",
+          "DOI": "10.1016/j.cities.2020.103010",
+          "article-title": "Spread of COVID-19 in China: analysis from a city-based epidemic and mobility model",
+          "volume": "110",
+          "author": "Y Wei",
+          "year": "2021",
+          "journal-title": "Cities"
+        },
+        {
+          "issue": "7",
+          "key": "pcbi.1012738.ref010",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0254403",
+          "DOI": "10.1371/journal.pone.0254403",
+          "article-title": "The effect of human mobility restrictions on the COVID-19 transmission network in China",
+          "volume": "16",
+          "author": "T Oka",
+          "year": "2021",
+          "journal-title": "PLoS One"
+        },
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref011",
+          "doi-asserted-by": "crossref",
+          "first-page": "339",
+          "DOI": "10.1186/s13662-018-1801-x",
+          "article-title": "Moment closure of infectious diseases model on heterogeneous metapopulation network",
+          "volume": "2018",
+          "author": "S Feng",
+          "year": "2018",
+          "journal-title": "Adv Differ Equ"
+        },
+        {
+          "issue": "18",
+          "key": "pcbi.1012738.ref012",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1073/pnas.2007488118",
+          "article-title": "Comparing metapopulation dynamics of infectious diseases under different models of human movement",
+          "volume": "118",
+          "author": "DT Citron",
+          "year": "2021",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref013",
+          "doi-asserted-by": "crossref",
+          "first-page": "10546",
+          "DOI": "10.1038/s41598-023-37192-z",
+          "article-title": "Role of immigration and emigration on the spread of COVID-19 in a multipatch environment: a case study of India",
+          "volume": "13",
+          "author": "T Das",
+          "year": "2023",
+          "journal-title": "Sci Rep"
+        },
+        {
+          "key": "pcbi.1012738.ref014",
+          "doi-asserted-by": "crossref",
+          "first-page": "62",
+          "DOI": "10.1038/srep00062",
+          "article-title": "Modeling human mobility responses to the large-scale spreading of infectious diseases",
+          "volume": "1",
+          "author": "S Meloni",
+          "year": "2011",
+          "journal-title": "Sci Rep"
+        },
+        {
+          "key": "pcbi.1012738.ref015",
+          "doi-asserted-by": "crossref",
+          "first-page": "87",
+          "DOI": "10.1016/j.amc.2019.05.005",
+          "article-title": "Infectious diseases spreading on a metapopulation network coupled with its second-neighbor network",
+          "volume": "361",
+          "author": "S Feng",
+          "year": "2019",
+          "journal-title": "Appl Math Comput"
+        },
+        {
+          "issue": "1829",
+          "key": "pcbi.1012738.ref016",
+          "doi-asserted-by": "crossref",
+          "first-page": "20200272",
+          "DOI": "10.1098/rstb.2020.0272",
+          "article-title": "A spatial model of COVID-19 transmission in England and Wales: early spread, peak timing and the impact of seasonality",
+          "volume": "376",
+          "author": "L Danon",
+          "year": "2021",
+          "journal-title": "Philos Trans R Soc Lond B Biol Sci"
+        },
+        {
+          "issue": "5",
+          "key": "pcbi.1012738.ref017",
+          "doi-asserted-by": "crossref",
+          "first-page": "e1011123",
+          "DOI": "10.1371/journal.pcbi.1011123",
+          "article-title": "Understanding the impact of mobility on COVID-19 spread: A hybrid gravity-metapopulation model of COVID-19",
+          "volume": "19",
+          "author": "SA Iyaniwura",
+          "year": "2023",
+          "journal-title": "PLoS Comput Biol"
+        },
+        {
+          "issue": "3",
+          "key": "pcbi.1012738.ref018",
+          "article-title": "LSTM-RNN Based Approach for Prediction of Dengue Cases in India",
+          "volume": "25",
+          "author": "AR Doni",
+          "year": "2020",
+          "journal-title": "Ingénierie des Systémes d’Information"
+        },
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref019",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0262708",
+          "DOI": "10.1371/journal.pone.0262708",
+          "article-title": "Deep learning via LSTM models for COVID-19 infection forecasting in India",
+          "volume": "17",
+          "author": "R Chandra",
+          "year": "2022",
+          "journal-title": "PLoS One"
+        },
+        {
+          "issue": "9",
+          "key": "pcbi.1012738.ref020",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0237750",
+          "DOI": "10.1371/journal.pone.0237750",
+          "article-title": "Prediction of hepatitis E using machine learning models",
+          "volume": "15",
+          "author": "Y Guo",
+          "year": "2020",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "pcbi.1012738.ref021",
+          "doi-asserted-by": "crossref",
+          "first-page": "109864",
+          "DOI": "10.1016/j.chaos.2020.109864",
+          "article-title": "Time series forecasting of COVID-19 transmission in Canada using LSTM networks",
+          "volume": "135",
+          "author": "VKR Chimmula",
+          "year": "2020",
+          "journal-title": "Chaos Solitons Fractals"
+        },
+        {
+          "key": "pcbi.1012738.ref022",
+          "doi-asserted-by": "crossref",
+          "first-page": "110017",
+          "DOI": "10.1016/j.chaos.2020.110017",
+          "article-title": "Prediction and analysis of COVID-19 positive cases using deep learning models: A descriptive case study of India",
+          "volume": "139",
+          "author": "P Arora",
+          "year": "2020",
+          "journal-title": "Chaos Solitons Fractals"
+        },
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref023",
+          "doi-asserted-by": "crossref",
+          "first-page": "45",
+          "DOI": "10.1109/TBDATA.2020.3032755",
+          "article-title": "An Epidemiological Neural Network Exploiting Dynamic Graph Structured Data Applied to the COVID-19 Outbreak",
+          "volume": "7",
+          "author": "V La Gatta",
+          "year": "2021",
+          "journal-title": "IEEE Trans Big Data"
+        },
+        {
+          "key": "pcbi.1012738.ref024",
+          "unstructured": "Kapoor A, Ben X, Liu L, Perozzi B, Barnes M, Blais M, et al. Examining covid-19 forecasting using spatio-temporal graph neural networks. arXiv preprint arXiv:200703113. 2020."
+        },
+        {
+          "issue": "11",
+          "key": "pcbi.1012738.ref025",
+          "doi-asserted-by": "crossref",
+          "first-page": "744",
+          "DOI": "10.1038/s43588-021-00158-0",
+          "article-title": "Identifiability and predictability of integer- and fractional-order epidemiological models using physics-informed neural networks",
+          "volume": "1",
+          "author": "E Kharazmi",
+          "year": "2021",
+          "journal-title": "Nat Comput Sci"
+        },
+        {
+          "issue": "10",
+          "key": "pcbi.1012738.ref026",
+          "doi-asserted-by": "crossref",
+          "first-page": "e1011535",
+          "DOI": "10.1371/journal.pcbi.1011535",
+          "article-title": "Combining the dynamic model and deep neural networks to identify the intensity of interventions during COVID-19 pandemic",
+          "volume": "19",
+          "author": "M He",
+          "year": "2023",
+          "journal-title": "PLoS Comput Biol"
+        },
+        {
+          "issue": "4",
+          "key": "pcbi.1012738.ref027",
+          "doi-asserted-by": "crossref",
+          "first-page": "733",
+          "DOI": "10.1093/jamia/ocaa322",
+          "article-title": "STAN: spatio-temporal attention network for pandemic prediction using real-world evidence",
+          "volume": "28",
+          "author": "J Gao",
+          "year": "2021",
+          "journal-title": "J Am Med Inform Assoc"
+        },
+        {
+          "issue": "11",
+          "key": "pcbi.1012738.ref028",
+          "doi-asserted-by": "crossref",
+          "first-page": "12191",
+          "DOI": "10.1609/aaai.v36i11.21479",
+          "article-title": "CausalGNN: Causal-Based Graph Neural Networks for Spatio-Temporal Epidemic Forecasting",
+          "volume": "36",
+          "author": "L Wang",
+          "year": "2022",
+          "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence"
+        },
+        {
+          "key": "pcbi.1012738.ref029",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Cao Q, Jiang R, Yang C, Fan Z, Song X, Shibasaki R, editors. MepoGNN: Metapopulation Epidemic Forecasting withÂ Graph Neural Networks. Machine Learning and Knowledge Discovery in Databases; 2023 2023//; Cham: Springer Nature Switzerland.",
+          "DOI": "10.1007/978-3-031-26422-1_28"
+        },
+        {
+          "issue": "4",
+          "key": "pcbi.1012738.ref030",
+          "article-title": "MPSTAN: Metapopulation-Based Spatio-Temporal Attention Network for Epidemic Forecasting",
+          "volume": "26",
+          "author": "J Mao",
+          "year": "2024",
+          "journal-title": "Entropy (Basel)"
+        },
+        {
+          "issue": "2",
+          "key": "pcbi.1012738.ref031",
+          "doi-asserted-by": "crossref",
+          "first-page": "462",
+          "DOI": "10.1111/insr.12402",
+          "article-title": "A Review of Multi-Compartment Infectious Disease Models",
+          "volume": "88",
+          "author": "L Tang",
+          "year": "2020",
+          "journal-title": "Int Stat Rev"
+        },
+        {
+          "key": "pcbi.1012738.ref032",
+          "first-page": "28877",
+          "article-title": "Do transformers really perform badly for graph representation?",
+          "volume": "34",
+          "author": "C Ying",
+          "year": "2021",
+          "journal-title": "Advances in neural information processing systems"
+        },
+        {
+          "key": "pcbi.1012738.ref033",
+          "article-title": "Attention is all you need",
+          "volume": "30",
+          "author": "A Vaswani",
+          "year": "2017",
+          "journal-title": "Advances in neural information processing systems"
+        },
+        {
+          "issue": "6164",
+          "key": "pcbi.1012738.ref034",
+          "doi-asserted-by": "crossref",
+          "first-page": "1337",
+          "DOI": "10.1126/science.1245200",
+          "article-title": "The hidden geometry of complex, network-driven contagion phenomena",
+          "volume": "342",
+          "author": "D Brockmann",
+          "year": "2013",
+          "journal-title": "science"
+        },
+        {
+          "key": "pcbi.1012738.ref035",
+          "unstructured": "Yu F, Koltun V. Multi-scale context aggregation by dilated convolutions. arXiv preprint arXiv:151107122. 2015."
+        },
+        {
+          "key": "pcbi.1012738.ref036",
+          "unstructured": "Dauphin YN, Fan A, Auli M, Grangier D. Language Modeling with Gated Convolutional Networks. In: Doina P, Yee Whye T, editors. Proceedings of the 34th International Conference on Machine Learning; Proceedings of Machine Learning Research: PMLR; 2017. p. 933–41."
+        },
+        {
+          "issue": "6498",
+          "key": "pcbi.1012738.ref037",
+          "doi-asserted-by": "crossref",
+          "first-page": "1481",
+          "DOI": "10.1126/science.abb8001",
+          "article-title": "Changes in contact patterns shape the dynamics of the COVID-19 outbreak in China",
+          "volume": "368",
+          "author": "J Zhang",
+          "year": "2020",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "5",
+          "key": "pcbi.1012738.ref038",
+          "doi-asserted-by": "crossref",
+          "first-page": "e261",
+          "DOI": "10.1016/S2468-2667(20)30073-6",
+          "article-title": "The effect of control strategies to reduce social mixing on outcomes of the COVID-19 epidemic in Wuhan, China: a modelling study",
+          "volume": "5",
+          "author": "K Prem",
+          "year": "2020",
+          "journal-title": "Lancet Public Health"
+        },
+        {
+          "issue": "6",
+          "key": "pcbi.1012738.ref039",
+          "doi-asserted-by": "crossref",
+          "first-page": "695",
+          "DOI": "10.1038/s41562-021-01063-2",
+          "article-title": "Integrated vaccination and physical distancing interventions to prevent future COVID-19 waves in Chinese cities",
+          "volume": "5",
+          "author": "B Huang",
+          "year": "2021",
+          "journal-title": "Nat Hum Behav"
+        },
+        {
+          "key": "pcbi.1012738.ref040",
+          "unstructured": "Health Commission of the People’s Republic of China. [cited 30 Dec 2022]. Available from: http://www.nhc.gov.cn/."
+        },
+        {
+          "key": "pcbi.1012738.ref041",
+          "unstructured": "Beijing Health Commission.[cited 30 Dec 2022]. Available from: http://wjw.beijing.gov.cn/"
+        },
+        {
+          "key": "pcbi.1012738.ref042",
+          "unstructured": "National Bureau of Statistics of China. [cited 22 Oct 2023]. Available from: https://www.stats.gov.cn/"
+        },
+        {
+          "key": "pcbi.1012738.ref043",
+          "unstructured": "Baidu migration. [cited 22 Oct 2023]. Available from: https://qianxi.baidu.com/"
+        },
+        {
+          "key": "pcbi.1012738.ref044",
+          "first-page": "616",
+          "article-title": "An inversion of the constitution of the Baidu migration scale index",
+          "author": "C Wang",
+          "year": "2021",
+          "journal-title": "Dianzi Keji Daxue Xuebao/Journal of the University of Electronic Science and Technology of China"
+        },
+        {
+          "issue": "6",
+          "key": "pcbi.1012738.ref045",
+          "doi-asserted-by": "crossref",
+          "first-page": "1103",
+          "DOI": "10.1038/s41591-022-01828-w",
+          "article-title": "A joint international collaboration to address the inevitable mental health crisis in Ukraine",
+          "volume": "28",
+          "author": "W Bai",
+          "year": "2022",
+          "journal-title": "Nat Med"
+        },
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref046",
+          "doi-asserted-by": "crossref",
+          "first-page": "013105",
+          "DOI": "10.1063/1.5002009",
+          "article-title": "Estimating epidemic arrival times using linear spreading theory",
+          "volume": "28",
+          "author": "LM Chen",
+          "year": "2018",
+          "journal-title": "Chaos"
+        },
+        {
+          "issue": "1",
+          "key": "pcbi.1012738.ref047",
+          "doi-asserted-by": "crossref",
+          "first-page": "4",
+          "DOI": "10.1007/s11538-022-01110-7",
+          "article-title": "Epidemic Spreading on Complex Networks as Front Propagation into an Unstable State",
+          "volume": "85",
+          "author": "A Armbruster",
+          "year": "2022",
+          "journal-title": "Bull Math Biol"
+        },
+        {
+          "key": "pcbi.1012738.ref048",
+          "doi-asserted-by": "crossref",
+          "first-page": "34",
+          "DOI": "10.1016/j.tranpol.2020.05.012",
+          "article-title": "Exploring the roles of high-speed train, air and coach services in the spread of COVID-19 in China",
+          "volume": "94",
+          "author": "Y Zhang",
+          "year": "2020",
+          "journal-title": "Transp Policy (Oxf)"
+        },
+        {
+          "key": "pcbi.1012738.ref049",
+          "doi-asserted-by": "crossref",
+          "first-page": "100397",
+          "DOI": "10.1016/j.epidem.2020.100397",
+          "article-title": "The effects of border control and quarantine measures on the spread of COVID-19",
+          "volume": "32",
+          "author": "MP Hossain",
+          "year": "2020",
+          "journal-title": "Epidemics"
+        },
+        {
+          "issue": "7820",
+          "key": "pcbi.1012738.ref050",
+          "doi-asserted-by": "crossref",
+          "first-page": "257",
+          "DOI": "10.1038/s41586-020-2405-7",
+          "article-title": "Estimating the effects of non-pharmaceutical interventions on COVID-19 in Europe",
+          "volume": "584",
+          "author": "S Flaxman",
+          "year": "2020",
+          "journal-title": "Nature"
+        },
+        {
+          "issue": "7825",
+          "key": "pcbi.1012738.ref051",
+          "doi-asserted-by": "crossref",
+          "first-page": "410",
+          "DOI": "10.1038/s41586-020-2293-x",
+          "article-title": "Effect of non-pharmaceutical interventions to contain COVID-19 in China",
+          "volume": "585",
+          "author": "S Lai",
+          "year": "2020",
+          "journal-title": "Nature"
+        }
+      ],
+      "container-title": [
+        "PLOS Computational Biology"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://dx.plos.org/10.1371/journal.pcbi.1012738",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            9
+          ]
+        ],
+        "date-time": "2025-01-09T18:24:54Z",
+        "timestamp": 1736447094000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://dx.plos.org/10.1371/journal.pcbi.1012738"
+        }
+      },
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Jessica M.",
+          "family": "Conway",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "editor"
+            }
+          ]
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            9
+          ]
+        ]
+      },
+      "references-count": 51,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              9
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1371/journal.pcbi.1012738",
+      "relation": {},
+      "ISSN": [
+        "1553-7358"
+      ],
+      "issn-type": [
+        {
+          "value": "1553-7358",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            9
+          ]
+        ]
+      }
+    },
+    "bib": "@article{mgraphormer2025,\n author={Xiaoyi Wang and Zhen Jin},\n title={Multi-region infectious disease prediction modeling based on spatio-temporal graph neural network and the dynamic model},\n year={2025}, journal={PLOS Computational Biology}, doi={10.1371/journal.pcbi.1012738}, volume={21}, number={1}, pages={e1012738}}\n"
+  },
+  {
+    "key": "eistgnn2025",
+    "title": "Epidemiology-informed Spatiotemporal Graph Neural Network for heterogeneity-driven interpretable epidemic forecasting",
+    "authors": [
+      "Shuai Han",
+      "Lukas Stelz",
+      "Thomas R. Sokolowski",
+      "Kai Zhou",
+      "Horst Stöcker"
+    ],
+    "url": "https://doi.org/10.1016/j.engappai.2025.112764",
+    "crossref_metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            25
+          ]
+        ],
+        "date-time": "2026-09-25T04:31:39Z",
+        "timestamp": 1790310699572,
+        "version": "4.1.0"
+      },
+      "reference-count": 60,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2025-12-01T00:00:00Z",
+            "timestamp": 1764547200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2025-12-01T00:00:00Z",
+            "timestamp": 1764547200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2025-12-01T00:00:00Z",
+            "timestamp": 1764547200000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-017"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2025-12-01T00:00:00Z",
+            "timestamp": 1764547200000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-037"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2025-12-01T00:00:00Z",
+            "timestamp": 1764547200000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-012"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2025-12-01T00:00:00Z",
+            "timestamp": 1764547200000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-029"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2025-12-01T00:00:00Z",
+            "timestamp": 1764547200000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-004"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100022813",
+          "name": "The Chinese University of Hong Kong - Shenzhen",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/100022813",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100012234",
+          "name": "Shenzhen Peacock Plan",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100012234",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100009019",
+          "name": "Shenzhen University",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "UDF03003041"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "UDF03003041"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100009019",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100009019",
+          "name": "Shenzhen University",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "UDF01003041"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "UDF01003041"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100009019",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100005687",
+          "name": "Goethe-Universität Frankfurt am Main",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100005687",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Engineering Applications of Artificial Intelligence"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.engappai.2025.112764",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            17
+          ]
+        ],
+        "date-time": "2025-10-17T12:47:58Z",
+        "timestamp": 1760705278000
+      },
+      "page": "112764",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 5,
+      "special_numbering": "PE",
+      "title": [
+        "Epidemiology-informed Spatiotemporal Graph Neural Network for heterogeneity-driven interpretable epidemic forecasting"
+      ],
+      "prefix": "10.1016",
+      "volume": "162",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5260-0652",
+          "authenticated-orcid": false,
+          "given": "Shuai",
+          "family": "Han",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2958-0921",
+          "authenticated-orcid": false,
+          "given": "Lukas",
+          "family": "Stelz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas R.",
+          "family": "Sokolowski",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9859-1758",
+          "authenticated-orcid": false,
+          "given": "Kai",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Horst",
+          "family": "Stöcker",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "issue": "6507",
+          "key": "10.1016/j.engappai.2025.112764_b1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1106",
+          "DOI": "10.1126/science.abc9004",
+          "article-title": "Serial interval of SARS-CoV-2 was shortened over time by nonpharmaceutical interventions",
+          "volume": "369",
+          "author": "Ali",
+          "year": "2020",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b2",
+          "series-title": "Infectious Diseases of Humans: Dynamics and Control",
+          "author": "Anderson",
+          "year": "1992"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b3",
+          "series-title": "An empirical evaluation of generic convolutional and recurrent networks for sequence modeling",
+          "author": "Bai",
+          "year": "2018"
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.engappai.2025.112764_b4",
+          "first-page": "3",
+          "article-title": "The economic impact of COVID-19",
+          "volume": "34",
+          "author": "Baker",
+          "year": "2020",
+          "journal-title": "J. Econ. Perspect."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b5",
+          "series-title": "DXY-COVID-19-data: Releases",
+          "author": "Blanker",
+          "year": "2024"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b6",
+          "series-title": "Time Series Analysis: Forecasting and Control",
+          "author": "Box",
+          "year": "1976"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b7",
+          "series-title": "Time Series Analysis: Forecasting and Control",
+          "author": "Box",
+          "year": "1976"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b8",
+          "series-title": "Metapopulation graph neural networks: Deep metapopulation epidemic modeling with human mobility",
+          "author": "Cao",
+          "year": "2023"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b9",
+          "series-title": "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing",
+          "first-page": "1724",
+          "article-title": "Learning phrase representations using RNN encoder-decoder for statistical machine translation",
+          "author": "Cho",
+          "year": "2014"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.engappai.2025.112764_b10",
+          "first-page": "150",
+          "article-title": "Network-based approaches to understanding mobility patterns in disease spread",
+          "volume": "5",
+          "author": "Davis",
+          "year": "2023",
+          "journal-title": "Netw. Heal."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b11",
+          "series-title": "Graph message passing with cross-location attentions for long-term ILI prediction",
+          "author": "Deng",
+          "year": "2019"
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.engappai.2025.112764_b12",
+          "doi-asserted-by": "crossref",
+          "first-page": "365",
+          "DOI": "10.1007/BF00178324",
+          "article-title": "On the definition and the computation of the basic reproduction ratio R0 in models for infectious diseases in heterogeneous populations",
+          "volume": "28",
+          "author": "Diekmann",
+          "year": "1990",
+          "journal-title": "J. Math. Biol."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b13",
+          "series-title": "Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining",
+          "first-page": "364",
+          "article-title": "Spatial-temporal graph ODE networks for traffic flow forecasting",
+          "author": "Fang",
+          "year": "2021"
+        },
+        {
+          "issue": "8",
+          "key": "10.1016/j.engappai.2025.112764_b14",
+          "first-page": "e246",
+          "article-title": "Subclinical SARS-CoV-2 infections and transmission in households: A longitudinal analysis",
+          "volume": "20",
+          "author": "Fisman",
+          "year": "2020",
+          "journal-title": "Lancet Infect. Dis."
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.engappai.2025.112764_b15",
+          "first-page": "89",
+          "article-title": "Incorporating spatial heterogeneity into epidemiological models",
+          "volume": "8",
+          "author": "Garcia",
+          "year": "2021",
+          "journal-title": "Spat. Heal."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b16",
+          "series-title": "Deep Learning",
+          "author": "Goodfellow",
+          "year": "2016"
+        },
+        {
+          "issue": "6",
+          "key": "10.1016/j.engappai.2025.112764_b17",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.jfranklin.2024.106671",
+          "article-title": "Approaching epidemiological dynamics of COVID-19 with physics-informed neural networks",
+          "volume": "361",
+          "author": "Han",
+          "year": "2024",
+          "journal-title": "J. Franklin Inst."
+        },
+        {
+          "issue": "6227",
+          "key": "10.1016/j.engappai.2025.112764_b18",
+          "doi-asserted-by": "crossref",
+          "first-page": "aaa4339",
+          "DOI": "10.1126/science.aaa4339",
+          "article-title": "Modeling infectious disease dynamics in the complex landscape of global health",
+          "volume": "347",
+          "author": "Heesterbeek",
+          "year": "2015",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "8",
+          "key": "10.1016/j.engappai.2025.112764_b19",
+          "doi-asserted-by": "crossref",
+          "first-page": "1735",
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "article-title": "Long short-term memory",
+          "volume": "9",
+          "author": "Hochreiter",
+          "year": "1997",
+          "journal-title": "Neural Comput."
+        },
+        {
+          "issue": "7820",
+          "key": "10.1016/j.engappai.2025.112764_b20",
+          "doi-asserted-by": "crossref",
+          "first-page": "262",
+          "DOI": "10.1038/s41586-020-2404-8",
+          "article-title": "The effect of large-scale anti-contagion policies on the COVID-19 pandemic",
+          "volume": "584",
+          "author": "Hsiang",
+          "year": "2020",
+          "journal-title": "Nature"
+        },
+        {
+          "issue": "8",
+          "key": "10.1016/j.engappai.2025.112764_b21",
+          "first-page": "2624",
+          "article-title": "Adaptively aggregated graph neural networks for weakly-supervised disease progression modeling",
+          "volume": "39",
+          "author": "Huang",
+          "year": "2020",
+          "journal-title": "IEEE Trans. Med. Imaging"
+        },
+        {
+          "issue": "8",
+          "key": "10.1016/j.engappai.2025.112764_b22",
+          "first-page": "946",
+          "article-title": "The impact of response measures on COVID-19-related hospitalization and death rates in Germany and Switzerland",
+          "volume": "125",
+          "author": "Huber",
+          "year": "2020",
+          "journal-title": "Heal. Policy"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.engappai.2025.112764_b23",
+          "first-page": "112",
+          "article-title": "Limitations of the SIR model in heterogeneous populations",
+          "volume": "22",
+          "author": "Johnson",
+          "year": "2019",
+          "journal-title": "Int. J. Public Heal."
+        },
+        {
+          "issue": "6",
+          "key": "10.1016/j.engappai.2025.112764_b24",
+          "doi-asserted-by": "crossref",
+          "first-page": "422",
+          "DOI": "10.1038/s42254-021-00314-5",
+          "article-title": "Physics-informed machine learning",
+          "volume": "3",
+          "author": "Karniadakis",
+          "year": "2021",
+          "journal-title": "Nat. Rev. Phys."
+        },
+        {
+          "issue": "772",
+          "key": "10.1016/j.engappai.2025.112764_b25",
+          "first-page": "700",
+          "article-title": "A contribution to the mathematical theory of epidemics",
+          "volume": "115",
+          "author": "Kermack",
+          "year": "1927",
+          "journal-title": "Proc. R. Soc. Lond. Ser. A. Mathematical Phys. Sci."
+        },
+        {
+          "issue": "6490",
+          "key": "10.1016/j.engappai.2025.112764_b26",
+          "doi-asserted-by": "crossref",
+          "first-page": "493",
+          "DOI": "10.1126/science.abb4218",
+          "article-title": "The effect of human mobility and control measures on the COVID-19 epidemic in China",
+          "volume": "368",
+          "author": "Kraemer",
+          "year": "2020",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "7553",
+          "key": "10.1016/j.engappai.2025.112764_b27",
+          "doi-asserted-by": "crossref",
+          "first-page": "436",
+          "DOI": "10.1038/nature14539",
+          "article-title": "Deep learning",
+          "volume": "521",
+          "author": "LeCun",
+          "year": "2015",
+          "journal-title": "Nature"
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.engappai.2025.112764_b28",
+          "first-page": "300",
+          "article-title": "Machine learning techniques for integrating spatial data in epidemiological models",
+          "volume": "12",
+          "author": "Lee",
+          "year": "2023",
+          "journal-title": "Comput. Epidemiol"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b29",
+          "series-title": "Diffusion convolutional recurrent neural network: Data-driven traffic forecasting",
+          "author": "Li",
+          "year": "2018"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b30",
+          "article-title": "DSTAGNN: Dynamic spatial-temporal aware graph neural networks for traffic forecasting",
+          "author": "Li",
+          "year": "2022",
+          "journal-title": "IEEE Trans. Intell. Transp. Syst."
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.engappai.2025.112764_b31",
+          "first-page": "1808",
+          "article-title": "Temporal fusion transformers for interpretable multi-horizon time series forecasting",
+          "volume": "36",
+          "author": "Lim",
+          "year": "2020",
+          "journal-title": "Int. J. Forecast."
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.engappai.2025.112764_b32",
+          "doi-asserted-by": "crossref",
+          "first-page": "31",
+          "DOI": "10.1145/3236386.3241340",
+          "article-title": "The mythos of model interpretability",
+          "volume": "16",
+          "author": "Lipton",
+          "year": "2018",
+          "journal-title": "ACM Queue"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b33",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.knosys.2024.111952",
+          "article-title": "Backbone-based dynamic spatio-temporal graph neural network for epidemic forecasting",
+          "volume": "296",
+          "author": "Mao",
+          "year": "2024",
+          "journal-title": "Knowl.-Based Syst."
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.engappai.2025.112764_b34",
+          "first-page": "45",
+          "article-title": "Metapopulation models for regional disease interactions",
+          "volume": "10",
+          "author": "Miller",
+          "year": "2022",
+          "journal-title": "J. Dis. Dyn."
+        },
+        {
+          "issue": "1–2",
+          "key": "10.1016/j.engappai.2025.112764_b35",
+          "first-page": "1",
+          "article-title": "Vaccination and herd immunity for SIR epidemics",
+          "volume": "149",
+          "author": "Nowak",
+          "year": "1999",
+          "journal-title": "Math. Biosci."
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.engappai.2025.112764_b36",
+          "doi-asserted-by": "crossref",
+          "first-page": "717",
+          "DOI": "10.1093/ije/dyaa033",
+          "article-title": "The SARS, MERS and novel coronavirus (COVID-19) epidemics, the newest and biggest global health threats: what lessons have we learned?",
+          "volume": "49",
+          "author": "Peeri",
+          "year": "2020",
+          "journal-title": "Int. J. Epidemiol."
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.engappai.2025.112764_b37",
+          "doi-asserted-by": "crossref",
+          "first-page": "2348",
+          "DOI": "10.1007/s10618-024-01035-w",
+          "article-title": "MSGNN: Multi-scale spatio-temporal graph neural network for epidemic forecasting",
+          "volume": "38",
+          "author": "Qiu",
+          "year": "2024",
+          "journal-title": "Data Min. Knowl. Discov."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b38",
+          "series-title": "Universal differential equations for scientific machine learning",
+          "author": "Rackauckas",
+          "year": "2020"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b39",
+          "doi-asserted-by": "crossref",
+          "first-page": "686",
+          "DOI": "10.1016/j.jcp.2018.10.045",
+          "article-title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+          "volume": "378",
+          "author": "Raissi",
+          "year": "2019",
+          "journal-title": "J. Comput. Phys."
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.engappai.2025.112764_b40",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1371/journal.pone.0247854",
+          "article-title": "CoVid-19, learning from the past: A wavelet and cross-correlation analysis of the epidemic dynamics looking to emergency calls and Twitter trends in Italian lombardy region",
+          "volume": "16",
+          "author": "Rivieccio",
+          "year": "2021",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b41",
+          "series-title": "SARS-CoV-2 infektionen in deutschland",
+          "author": "Robert Koch-Institut",
+          "year": "2024"
+        },
+        {
+          "issue": "5",
+          "key": "10.1016/j.engappai.2025.112764_b42",
+          "doi-asserted-by": "crossref",
+          "first-page": "206",
+          "DOI": "10.1038/s42256-019-0048-x",
+          "article-title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+          "volume": "1",
+          "author": "Rudin",
+          "year": "2019",
+          "journal-title": "Nat. Mach. Intell."
+        },
+        {
+          "issue": "6088",
+          "key": "10.1016/j.engappai.2025.112764_b43",
+          "doi-asserted-by": "crossref",
+          "first-page": "533",
+          "DOI": "10.1038/323533a0",
+          "article-title": "Learning representations by back-propagating errors",
+          "volume": "323",
+          "author": "Rumelhart",
+          "year": "1986",
+          "journal-title": "Nature"
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.engappai.2025.112764_b44",
+          "first-page": "234",
+          "article-title": "Modeling infectious disease spread with homogeneous populations",
+          "volume": "15",
+          "author": "Smith",
+          "year": "2020",
+          "journal-title": "J. Epidemiological Model."
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.engappai.2025.112764_b45",
+          "doi-asserted-by": "crossref",
+          "first-page": "199",
+          "DOI": "10.1023/B:STCO.0000035301.49549.88",
+          "article-title": "A tutorial on support vector regression",
+          "volume": "10",
+          "author": "Smola",
+          "year": "1998",
+          "journal-title": "Stat. Comput."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b46",
+          "doi-asserted-by": "crossref",
+          "first-page": "2263",
+          "DOI": "10.1007/s10462-023-10577-2",
+          "article-title": "Attention-based graph neural networks: a survey",
+          "volume": "56",
+          "author": "Sun",
+          "year": "2023",
+          "journal-title": "Artif. Intell. Rev."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b47",
+          "article-title": "Attention is all you need",
+          "volume": "30",
+          "author": "Vaswani",
+          "year": "2017",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "issue": "9",
+          "key": "10.1016/j.engappai.2025.112764_b48",
+          "first-page": "993",
+          "article-title": "Estimating the serial interval of SARS-CoV-2 infections",
+          "volume": "172",
+          "author": "Wallinga",
+          "year": "2006",
+          "journal-title": "Am. J. Epidemiol."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b49",
+          "series-title": "STGformer: Efficient spatiotemporal graph transformer for traffic forecasting",
+          "author": "Wang",
+          "year": "2024"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b50",
+          "series-title": "Mathematical Modelling, Simulations, and AI for Emergent Pandemic Diseases",
+          "first-page": "119",
+          "article-title": "Applications of deep learning in forecasting COVID-19 pandemic and county-level risk warning",
+          "author": "Wang",
+          "year": "2023"
+        },
+        {
+          "issue": "10231",
+          "key": "10.1016/j.engappai.2025.112764_b51",
+          "doi-asserted-by": "crossref",
+          "first-page": "689",
+          "DOI": "10.1016/S0140-6736(20)30260-9",
+          "article-title": "Dynamic spatiotemporal analysis of population flow data to predict the spread of COVID-19",
+          "volume": "395",
+          "author": "Wu",
+          "year": "2020",
+          "journal-title": "Lancet"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.engappai.2025.112764_b52",
+          "doi-asserted-by": "crossref",
+          "first-page": "4",
+          "DOI": "10.1109/TNNLS.2020.2978386",
+          "article-title": "A comprehensive survey on graph neural networks",
+          "volume": "32",
+          "author": "Wu",
+          "year": "2020",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b53",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wu, Z., Pan, S., Long, G., Jiang, J., Chang, X., Zhang, C., 2020c. Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks. In: Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. pp. 753–763.",
+          "DOI": "10.1145/3394486.3403118"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b54",
+          "series-title": "Graph WaveNet for deep spatial-temporal graph modeling",
+          "author": "Wu",
+          "year": "2019"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b55",
+          "first-page": "18738",
+          "article-title": "Machine learning for COVID-19 forecasting: A systematic review",
+          "volume": "9",
+          "author": "Yang",
+          "year": "2021",
+          "journal-title": "IEEE Access"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b56",
+          "series-title": "Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining",
+          "first-page": "1975",
+          "article-title": "Discrete-time temporal network embedding via implicit hierarchical learning in hyperbolic space",
+          "author": "Yang",
+          "year": "2021"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b57",
+          "article-title": "EpiGNN: A graph neural network for epidemic forecasting with static transmission risk",
+          "author": "Yang",
+          "year": "2021",
+          "journal-title": "IEEE Trans. Biomed. Eng."
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b58",
+          "series-title": "Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+          "first-page": "2296",
+          "article-title": "Learning the evolutionary and multi-scale graph structure for multivariate time series forecasting",
+          "author": "Ye",
+          "year": "2022"
+        },
+        {
+          "key": "10.1016/j.engappai.2025.112764_b59",
+          "series-title": "Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting",
+          "author": "Yu",
+          "year": "2018"
+        },
+        {
+          "issue": "5",
+          "key": "10.1016/j.engappai.2025.112764_b60",
+          "first-page": "1800",
+          "article-title": "Deep learning approaches for predicting COVID-19 case trends: A comparative study",
+          "volume": "33",
+          "author": "Zhang",
+          "year": "2022",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+        }
+      ],
+      "container-title": [
+        "Engineering Applications of Artificial Intelligence"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0952197625027952?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0952197625027952?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            12
+          ]
+        ],
+        "date-time": "2026-03-12T00:51:39Z",
+        "timestamp": 1773276699000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0952197625027952"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "references-count": 60,
+      "alternative-id": [
+        "S0952197625027952"
+      ],
+      "URL": "https://doi.org/10.1016/j.engappai.2025.112764",
+      "relation": {},
+      "ISSN": [
+        "0952-1976"
+      ],
+      "issn-type": [
+        {
+          "value": "0952-1976",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Epidemiology-informed Spatiotemporal Graph Neural Network for heterogeneity-driven interpretable epidemic forecasting",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Engineering Applications of Artificial Intelligence",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/j.engappai.2025.112764",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "article-number": "112764"
+    },
+    "bib": "@article{eistgnn2025,\n author={Shuai Han and Lukas Stelz and Thomas R. Sokolowski and Kai Zhou and Horst Stöcker},\n title={Epidemiology-informed Spatiotemporal Graph Neural Network for heterogeneity-driven interpretable epidemic forecasting},\n year={2025}, journal={Engineering Applications of Artificial Intelligence}, doi={10.1016/j.engappai.2025.112764}, volume={162}, pages={112764}, pages={112764}}\n"
+  },
+  {
+    "key": "heatgnn2024",
+    "title": "Epidemiology-informed Graph Neural Network for Heterogeneity-aware Epidemic Forecasting",
+    "authors": [
+      "Zheng, Yufan",
+      "Jiang, Wei",
+      "Chen, Tong",
+      "Zhou, Alexander",
+      "Hung, Nguyen Quoc Viet",
+      "Zhan, Choujun",
+      "Yin, Hongzhi"
+    ],
+    "url": "https://arxiv.org/abs/2411.17372",
+    "abstract": "Abstract: Among various spatio-temporal prediction tasks, epidemic forecasting plays a critical role in public health management. Recent studies have demonstrated the strong potential of spatio-temporal graph neural networks (STGNNs) in extracting heterogeneous spatio-temporal patterns for epidemic forecasting. However, most of these methods bear an over-simplified assumption that two locations (e.g., cities) with similar observed features in previous time steps will develop similar infection numbers in the future. In fact, for any epidemic disease, there exists strong heterogeneity of its intrinsic evolution mechanisms across geolocation and time, which can eventually lead to diverged infection numbers in two ``similar'' locations. However, such mechanistic heterogeneity is non-trivial to be captured due to the existence of numerous influencing factors like medical resource accessibility, virus mutations, mobility patterns, etc., most of which are spatio-temporal yet unreachable or even unobservable. To address this challenge, we propose a Heterogeneous Epidemic-Aware Transmission Graph Neural Network (HeatGNN), a novel epidemic forecasting framework. By binding the epidemiology mechanistic model into a GNN, HeatGNN learns epidemiology-informed location embeddings of different locations that reflect their own transmission mechanisms over time. With the time-varying mechanistic affinity graphs computed with the epidemiology-informed location embeddings, a heterogeneous transmission graph network is designed to encode the mechanistic heterogeneity among locations, providing additional predictive signals to facilitate accurate forecasting. Experiments on three benchmark datasets have revealed that HeatGNN outperforms various strong baselines. Moreover, our efficiency analysis verifies the real-world practicality of HeatGNN on datasets of different sizes.",
+    "bib": "@misc{heatgnn2024,\n author={Zheng, Yufan and Jiang, Wei and Chen, Tong and Zhou, Alexander and Hung, Nguyen Quoc Viet and Zhan, Choujun and Yin, Hongzhi},\n title={Epidemiology-informed Graph Neural Network for Heterogeneity-aware Epidemic Forecasting},\n year={2024}, howpublished={arXiv:2411.17372}, url={https://arxiv.org/abs/2411.17372}}\n",
+    "pdf_path": "02_references/new_related_work/heatgnn2024.pdf",
+    "pages": 13,
+    "sha256": "94d6a21eafda3e8d423bd001d3622856213caa010bbe4b19683bbdd47f93aceb",
+    "pdf_status": "downloaded_title_checked"
+  },
+  {
+    "key": "mechgnn2026",
+    "title": "MechGNN-Epi: Mechanistically Constrained Spatiotemporal Graph Learning for Regional Epidemic Forecasting",
+    "authors": [
+      "Debashis Chatterjee",
+      "Sagnik Acharyya",
+      "Subrata Rana"
+    ],
+    "url": "https://doi.org/10.1177/15741699261476683",
+    "crossref_metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            9
+          ]
+        ],
+        "date-time": "2026-10-09T15:49:31Z",
+        "timestamp": 1791560971034,
+        "version": "4.3.4"
+      },
+      "reference-count": 16,
+      "publisher": "SAGE Publications",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                14
+              ]
+            ],
+            "date-time": "2026-08-14T00:00:00Z",
+            "timestamp": 1786665600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "journals.sagepub.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Model Assisted Statistics and Applications"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            11
+          ]
+        ]
+      },
+      "abstract": "<jats:p>Mechanistic compartmental models such as SIR provide interpretability and enforce conservation of population, but their predictive performance can degrade in heterogeneous settings where transmission varies over time and across regions. Conversely, spatiotemporal graph neural networks (GNNs) can learn flexible spatial interactions from data, yet unconstrained predictors may yield epidemiologically inconsistent dynamics.</jats:p>\n                  <jats:p>We propose MechGNN-Epi, a hybrid framework that couples a spatiotemporal graph encoder with a differentiable SIR update. Rather than directly predicting future infections, the model learns region- and time-specific transmission and recovery parameters from graph-based latent representations and then propagates compartments through a mechanistic solver. This design yields epidemiologically constrained trajectories and produces region- and time-indexed parameter proxies that can be inspected as diagnostic signals, while not being guaranteed as causally identifiable mechanistic parameters. We evaluate the pipeline on U.S. state/territory COVID-19 surveillance data using strict chronological splits and report variability across multiple random seeds, multi-horizon rollouts, and ablation/sensitivity studies against graph and model variants.</jats:p>",
+      "DOI": "10.1177/15741699261476683",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            14
+          ]
+        ],
+        "date-time": "2026-08-14T15:32:01Z",
+        "timestamp": 1786721521000
+      },
+      "page": "340-358",
+      "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "MechGNN-Epi: Mechanistically Constrained Spatiotemporal Graph Learning for Regional Epidemic Forecasting"
+      ],
+      "prefix": "10.1177",
+      "volume": "21",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0991-7574",
+          "authenticated-orcid": false,
+          "given": "Debashis",
+          "family": "Chatterjee",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Visva-Bharati University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-6967-1688",
+          "authenticated-orcid": false,
+          "given": "Sagnik",
+          "family": "Acharyya",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Visva-Bharati University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4325-0144",
+          "authenticated-orcid": false,
+          "given": "Subrata",
+          "family": "Rana",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Kalyani"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "179",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            14
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "e_1_3_3_2_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.idm.2020.11.007"
+        },
+        {
+          "key": "e_1_3_3_3_1",
+          "volume-title": "Infectious diseases of humans: Dynamics and control",
+          "author": "Anderson R. M.",
+          "year": "1992",
+          "unstructured": "Anderson R. M., May R. M. (1992). Infectious diseases of humans: Dynamics and control. Oxford University Press. ISBN 9780198540403."
+        },
+        {
+          "key": "e_1_3_3_4_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/MAS-220013"
+        },
+        {
+          "key": "e_1_3_3_5_1",
+          "unstructured": "Chen R. T. Q. Rubanova Y. Bettencourt J. Duvenaud D. (2018). Neural ordinary differential equations. In Advances in Neural Information Processing Systems."
+        },
+        {
+          "key": "e_1_3_3_6_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pone.0263789"
+        },
+        {
+          "key": "e_1_3_3_7_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1080/07350015.1995.10524599"
+        },
+        {
+          "key": "e_1_3_3_8_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/15741699261456598"
+        },
+        {
+          "key": "e_1_3_3_9_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1137/S0036144500371907"
+        },
+        {
+          "key": "e_1_3_3_10_1",
+          "unstructured": "Kapoor A. Ben X. Liu L. Perozzi B. Barnes M. Blais M. O’Banion S. (2020). Examining COVID-19 forecasting using spatio-temporal graph neural networks. arXiv preprint arXiv:2007.03113 https://arxiv.org/abs/2007.03113"
+        },
+        {
+          "issue": "772",
+          "key": "e_1_3_3_11_1",
+          "first-page": "700",
+          "article-title": "A contribution to the mathematical theory of epidemics",
+          "volume": "115",
+          "author": "Kermack W. O.",
+          "year": "1927",
+          "unstructured": "Kermack W. O., McKendrick A. G. (1927). A contribution to the mathematical theory of epidemics. Proceedings of the Royal Society of London. Series A, 115(772), 700–721. https://doi.org/10.1098/rspa.1927.0118",
+          "journal-title": "Proceedings of the Royal Society of London. Series A"
+        },
+        {
+          "key": "e_1_3_3_12_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41562-020-0875-0"
+        },
+        {
+          "key": "e_1_3_3_13_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jcp.2018.10.045"
+        },
+        {
+          "key": "e_1_3_3_14_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jcp.2018.10.045"
+        },
+        {
+          "key": "e_1_3_3_15_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/MAS-210512"
+        },
+        {
+          "key": "e_1_3_3_16_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Xie F. Zhang Z. Li L. Zhou B. Tan Y. (2022). Epignn: Exploring spatial transmission with graph neural network for regional epidemic forecasting.",
+          "DOI": "10.1007/978-3-031-26422-1_29"
+        },
+        {
+          "key": "e_1_3_3_17_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Yu B. Yin H. Zhu Z. (2018). Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting. In Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence (IJCAI-18). International Joint Conferences on Artificial Intelligence Organization (pp. 3634–3640). https://doi.org/10.24963/ijcai.2018/505.",
+          "DOI": "10.24963/ijcai.2018/505"
+        }
+      ],
+      "container-title": [
+        "Model Assisted Statistics and Applications"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15741699261476683",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/15741699261476683",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15741699261476683",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            9
+          ]
+        ],
+        "date-time": "2026-10-09T14:58:47Z",
+        "timestamp": 1791557927000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://journals.sagepub.com/doi/10.1177/15741699261476683"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            14
+          ]
+        ]
+      },
+      "references-count": 16,
+      "journal-issue": {
+        "issue": "4",
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              11
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "10.1177/15741699261476683"
+      ],
+      "URL": "https://doi.org/10.1177/15741699261476683",
+      "relation": {},
+      "ISSN": [
+        "1574-1699",
+        "1875-9068"
+      ],
+      "issn-type": [
+        {
+          "value": "1574-1699",
+          "type": "print"
+        },
+        {
+          "value": "1875-9068",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            14
+          ]
+        ]
+      }
+    },
+    "bib": "@article{mechgnn2026,\n author={Debashis Chatterjee and Sagnik Acharyya and Subrata Rana},\n title={MechGNN-Epi: Mechanistically Constrained Spatiotemporal Graph Learning for Regional Epidemic Forecasting},\n year={2026}, journal={Model Assisted Statistics and Applications}, doi={10.1177/15741699261476683}, volume={21}, number={4}, pages={340-358}}\n"
+  },
+  {
+    "key": "grud2018",
+    "title": "Recurrent Neural Networks for Multivariate Time Series with Missing Values",
+    "authors": [
+      "Zhengping Che",
+      "Sanjay Purushotham",
+      "Kyunghyun Cho",
+      "David Sontag",
+      "Yan Liu"
+    ],
+    "url": "https://doi.org/10.1038/s41598-018-24271-9",
+    "crossref_metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            10
+          ]
+        ],
+        "date-time": "2026-10-10T02:42:01Z",
+        "timestamp": 1791600121122,
+        "version": "4.3.4"
+      },
+      "reference-count": 46,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                17
+              ]
+            ],
+            "date-time": "2018-04-17T00:00:00Z",
+            "timestamp": 1523923200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                17
+              ]
+            ],
+            "date-time": "2018-04-17T00:00:00Z",
+            "timestamp": 1523923200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Sci Rep"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Multivariate time series data in practical applications, such as health care, geoscience, and biology, are characterized by a variety of missing values. In time series prediction and other related tasks, it has been noted that missing values and their missing patterns are often correlated with the target labels, a.k.a.,\n                    <jats:italic>informative</jats:italic>\n                    missingness. There is very limited work on exploiting the missing patterns for effective imputation and improving prediction performance. In this paper, we develop novel deep learning models, namely\n                    <jats:bold>GRU</jats:bold>\n                    -\n                    <jats:bold>D</jats:bold>\n                    , as one of the early attempts. GRU-D is based on Gated Recurrent Unit (GRU), a state-of-the-art recurrent neural network. It takes two representations of missing patterns, i.e.,\n                    <jats:italic>masking</jats:italic>\n                    and\n                    <jats:italic>time interval</jats:italic>\n                    , and effectively incorporates them into a deep model architecture so that it not only captures the long-term temporal dependencies in time series, but also utilizes the missing patterns to achieve better prediction results. Experiments of time series classification tasks on real-world clinical datasets (MIMIC-III, PhysioNet) and synthetic datasets demonstrate that our models achieve state-of-the-art performance and provide useful insights for better understanding and utilization of missing values in time series analysis.\n                  </jats:p>",
+      "DOI": "10.1038/s41598-018-24271-9",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            11
+          ]
+        ],
+        "date-time": "2018-04-11T05:18:47Z",
+        "timestamp": 1523423927000
+      },
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 1858,
+      "title": [
+        "Recurrent Neural Networks for Multivariate Time Series with Missing Values"
+      ],
+      "prefix": "10.1038",
+      "volume": "8",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6818-1125",
+          "authenticated-orcid": false,
+          "given": "Zhengping",
+          "family": "Che",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sanjay",
+          "family": "Purushotham",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kyunghyun",
+          "family": "Cho",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Sontag",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yan",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            17
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "24271_CR1",
+          "first-page": "581",
+          "volume": "63",
+          "author": "DB Rubin",
+          "year": "1976",
+          "unstructured": "Rubin, D. B. Inference and missing data. Biom. 63, 581–592 (1976).",
+          "journal-title": "Biom."
+        },
+        {
+          "key": "24271_CR2",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Johnson, A. et al. Mimic-iii, a freely accessible critical care database. Sci. Data (2016).",
+          "DOI": "10.1038/sdata.2016.35"
+        },
+        {
+          "key": "24271_CR3",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Schafer, J. L. & Graham, J. W. Missing data: our view of the state of the art. Psychol. methods (2002).",
+          "DOI": "10.1037/1082-989X.7.2.147"
+        },
+        {
+          "key": "24271_CR4",
+          "unstructured": "Kreindler, D. M. & Lumsden, C. J. The effects of the irregular sample and missing data in time series analysis. Nonlinear Dyn. Syst. Analysis for Behav. Sci. Using Real Data (2012)."
+        },
+        {
+          "key": "24271_CR5",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/978-1-4612-6333-3",
+          "volume-title": "A practical guide to splines",
+          "author": "C De Boor",
+          "year": "1978",
+          "unstructured": "De Boor, C., De Boor, C., Mathématicien, E.-U., De Boor, C. & De Boor, C. A practical guide to splines 27 (Springer-Verlag, New York, 1978)."
+        },
+        {
+          "key": "24271_CR6",
+          "doi-asserted-by": "publisher",
+          "first-page": "943",
+          "DOI": "10.1007/s10463-008-0195-z",
+          "volume": "62",
+          "author": "D Mondal",
+          "year": "2010",
+          "unstructured": "Mondal, D. & Percival, D. B. Wavelet variance analysis for gappy time series. Annals Inst. Stat. Math. 62, 943–966 (2010).",
+          "journal-title": "Annals Inst. Stat. Math."
+        },
+        {
+          "key": "24271_CR7",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Rehfeld, K., Marwan, N., Heitzig, J. & Kurths, J. Comparison of correlation analysis techniques for irregularly sampled time series. Nonlinear Process. Geophys. 18 (2011).",
+          "DOI": "10.5194/npg-18-389-2011"
+        },
+        {
+          "key": "24271_CR8",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Garca-Laencina, P. J., Sancho-Gómez, J.-L. & Figueiras-Vidal, A. R. Pattern classification with missing data: a review. Neural Comput. Appl. 19 (2010).",
+          "DOI": "10.1007/s00521-009-0295-6"
+        },
+        {
+          "key": "24271_CR9",
+          "first-page": "2287",
+          "volume": "11",
+          "author": "R Mazumder",
+          "year": "2010",
+          "unstructured": "Mazumder, R., Hastie, T. & Tibshirani, R. Spectral regularization algorithms for learning large incomplete matrices. J. machine learning research 11, 2287–2322 (2010).",
+          "journal-title": "J. machine learning research"
+        },
+        {
+          "key": "24271_CR10",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Koren, Y., Bell, R. & Volinsky, C. Matrix factorization techniques for recommender systems. Comput. 42 (2009).",
+          "DOI": "10.1109/MC.2009.263"
+        },
+        {
+          "key": "24271_CR11",
+          "doi-asserted-by": "publisher",
+          "first-page": "377",
+          "DOI": "10.1002/sim.4067",
+          "volume": "30",
+          "author": "IR White",
+          "year": "2011",
+          "unstructured": "White, I. R., Royston, P. & Wood, A. M. Multiple imputation using chained equations: issues and guidance for practice. Stat. medicine 30, 377–399 (2011).",
+          "journal-title": "Stat. medicine"
+        },
+        {
+          "key": "24271_CR12",
+          "doi-asserted-by": "publisher",
+          "first-page": "40",
+          "DOI": "10.1002/mpr.329",
+          "volume": "20",
+          "author": "MJ Azur",
+          "year": "2011",
+          "unstructured": "Azur, M. J., Stuart, E. A., Frangakis, C. & Leaf, P. J. Multiple imputation by chained equations: what is it and how does it work? Int. journal methods psychiatric research 20, 40–49 (2011).",
+          "journal-title": "Int. journal methods psychiatric research"
+        },
+        {
+          "key": "24271_CR13",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wells, B. J., Chagin, K. M., Nowacki, A. S. & Kattan, M. W. Strategies for handling missing data in electronic health record derived data. EGEMS 1 (2013).",
+          "DOI": "10.13063/2327-9214.1035"
+        },
+        {
+          "key": "24271_CR14",
+          "doi-asserted-by": "publisher",
+          "first-page": "1735",
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "volume": "9",
+          "author": "S Hochreiter",
+          "year": "1997",
+          "unstructured": "Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural computation 9, 1735–1780 (1997).",
+          "journal-title": "Neural computation"
+        },
+        {
+          "key": "24271_CR15",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Cho, K. et al. Learning phrase representations using RNN encoder-decoder for statistical machine translation. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing, EMNLP, 1724–1734 (2014).",
+          "DOI": "10.3115/v1/D14-1179"
+        },
+        {
+          "key": "24271_CR16",
+          "unstructured": "Bahdanau, D., Cho, K. & Bengio, Y. Neural machine translation by jointly learning to align and translate. ICLR (2015)."
+        },
+        {
+          "key": "24271_CR17",
+          "unstructured": "Sutskever, I., Vinyals, O. & Le, Q. V. Sequence to sequence learning with neural networks. In Advances in neural information processing systems, 3104–3112 (2014)."
+        },
+        {
+          "key": "24271_CR18",
+          "doi-asserted-by": "publisher",
+          "first-page": "82",
+          "DOI": "10.1109/MSP.2012.2205597",
+          "volume": "29",
+          "author": "G Hinton",
+          "year": "2012",
+          "unstructured": "Hinton, G. et al. Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups. Signal Process. Mag. IEEE 29, 82–97 (2012).",
+          "journal-title": "Signal Process. Mag. IEEE"
+        },
+        {
+          "key": "24271_CR19",
+          "unstructured": "Bengio, Y. & Gingras, F. Recurrent neural networks for missing or asynchronous data. Adv. neural information processing systems 395–401 (1996)."
+        },
+        {
+          "key": "24271_CR20",
+          "unstructured": "Tresp, V. & Briegel, T. A solution for missing data in recurrent neural networks with an application to blood glucose prediction. NIPS 971–977 (1998)."
+        },
+        {
+          "key": "24271_CR21",
+          "unstructured": "Parveen, S. & Green, P. Speech recognition with missing data using recurrent neural nets. In Advances in Neural Information Processing Systems, 1189–1195 (2001)."
+        },
+        {
+          "key": "24271_CR22",
+          "unstructured": "Lipton, Z. C., Kale, D. & Wetzel, R. Directly modeling missing data in sequences with rnns: Improved classification of clinical time series. In Machine Learning for Healthcare Conference, 253–270 (2016)."
+        },
+        {
+          "key": "24271_CR23",
+          "unstructured": "Choi, E., Bahadori, M. T., Schuetz, A., Stewart, W. F. & Sun, J. Doctor ai: Predicting clinical events via recurrent neural networks. In Machine Learning for Healthcare Conference, 301–318 (2016)."
+        },
+        {
+          "key": "24271_CR24",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Pham, T., Tran, T., Phung, D. & Venkatesh, S. Deepcare: A deep dynamic memory model for predictive medicine. In Advances in Knowledge Discovery and Data Mining, 30–41 (2016).",
+          "DOI": "10.1007/978-3-319-31750-2_3"
+        },
+        {
+          "key": "24271_CR25",
+          "unstructured": "Che, Z., Purushotham, S., Cho, K., Sontag, D. & Liu, Y. Recurrent neural networks for multivariate time series with missing values. arXiv preprint arXiv:1606.01865 (2016)."
+        },
+        {
+          "key": "24271_CR26",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Vodovotz, Y., An, G. & Androulakis, I. P. A systems engineering perspective on homeostasis and disease. Front. bioengineering biotechnology 1 (2013).",
+          "DOI": "10.3389/fbioe.2013.00006"
+        },
+        {
+          "key": "24271_CR27",
+          "doi-asserted-by": "publisher",
+          "first-page": "183",
+          "DOI": "10.1016/j.jbi.2006.12.009",
+          "volume": "40",
+          "author": "L Zhou",
+          "year": "2007",
+          "unstructured": "Zhou, L. & Hripcsak, G. Temporal reasoning with medical data—a review with emphasis on medical natural language processing. J. biomedical informatics 40, 183–202 (2007).",
+          "journal-title": "J. biomedical informatics"
+        },
+        {
+          "key": "24271_CR28",
+          "first-page": "48",
+          "volume": "87",
+          "author": "GE Batista",
+          "year": "2002",
+          "unstructured": "Batista, G. E. & Monard, M. C. et al. A study of k-nearest neighbour as an imputation method. HIS 87, 48 (2002).",
+          "journal-title": "HIS"
+        },
+        {
+          "key": "24271_CR29",
+          "first-page": "79",
+          "volume": "153",
+          "author": "J Josse",
+          "year": "2012",
+          "unstructured": "Josse, J. & Husson, F. Handling missing values in exploratory multivariate data analysis methods. J. de la Société Française de Stat. 153, 79–99 (2012).",
+          "journal-title": "J. de la Société Française de Stat."
+        },
+        {
+          "key": "24271_CR30",
+          "doi-asserted-by": "publisher",
+          "first-page": "112",
+          "DOI": "10.1093/bioinformatics/btr597",
+          "volume": "28",
+          "author": "DJ Stekhoven",
+          "year": "2011",
+          "unstructured": "Stekhoven, D. J. & Bühlmann, P. Missforest—non-parametric missing value imputation for mixed-type data. Bioinforma. 28, 112–118 (2011).",
+          "journal-title": "Bioinforma."
+        },
+        {
+          "key": "24271_CR31",
+          "unstructured": "Alex Rubinsteyn, S. F. fancyimpute. https://github.com/hammerlab/fancyimpute (2015)."
+        },
+        {
+          "key": "24271_CR32",
+          "unstructured": "English, P. predictive_imputer. https://github.com/log0ymxm/predictive_imputer (2016)."
+        },
+        {
+          "key": "24271_CR33",
+          "unstructured": "Jones, E., Oliphant, T. & Peterson, P. Scipy: Open source scientific tools for python. http://www.scipy.org/ (2001)."
+        },
+        {
+          "key": "24271_CR34",
+          "first-page": "2825",
+          "volume": "12",
+          "author": "F Pedregosa",
+          "year": "2011",
+          "unstructured": "Pedregosa, F. et al. Scikit-learn: Machine learning in Python. J. Mach. Learn. Res. 12, 2825–2830 (2011).",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "key": "24271_CR35",
+          "unstructured": "Ioffe, S. & Szegedy, C. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In Proceedings of the 32nd International Conference on Machine Learning, 448–456 (2015)."
+        },
+        {
+          "key": "24271_CR36",
+          "unstructured": "Srivastava, N., Hinton, G. E., Krizhevsky, A., Sutskever, I. & Salakhutdinov, R. Dropout: a simple way to prevent neural networks from overfitting. JMLR 15 (2014)."
+        },
+        {
+          "key": "24271_CR37",
+          "unstructured": "Kingma, D. & Ba, J. Adam: A method for stochastic optimization. ICLR (2015)."
+        },
+        {
+          "key": "24271_CR38",
+          "unstructured": "Chollet, F. et al. Keras. https://github.com/keras-team/keras (2015)."
+        },
+        {
+          "key": "24271_CR39",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Bergstra, J. et al. Theano: a CPU and GPU math expression compiler. In Proceedings of the Python for Scientific Computing Conference (SciPy) (2010).",
+          "DOI": "10.25080/Majora-92bf1922-003"
+        },
+        {
+          "key": "24271_CR40",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Madeo, R. C., Lima, C. A. & Peres, S. M. Gesture unit segmentation using support vector machines: segmenting gestures from rest positions. In SAC (2013).",
+          "DOI": "10.1145/2480362.2480373"
+        },
+        {
+          "key": "24271_CR41",
+          "unstructured": "Silva, I., Moody, G., Scott, D. J., Celi, L. A. & Mark, R. G. Predicting in-hospital mortality of icu patients: The physionet/computing in cardiology challenge 2012. In CinC (2012)."
+        },
+        {
+          "key": "24271_CR42",
+          "unstructured": "Gal, Y. & Ghahramani, Z. A theoretically grounded application of dropout in recurrent neural networks. In Advances in Neural Information Processing Systems, 1019–1027 (2016)."
+        },
+        {
+          "key": "24271_CR43",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Che, Z., Kale, D., Li, W., Bahadori, M. T. & Liu, Y. Deep computational phenotyping. In SIGKDD (2015).",
+          "DOI": "10.1145/2783258.2783365"
+        },
+        {
+          "key": "24271_CR44",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Purushotham, S., Meng, C., Che, Z. & Liu, Y. Benchmark of deep learning models on large healthcare mimic datasets. arXiv preprint arXiv:1710.08531 (2017).",
+          "DOI": "10.1016/j.jbi.2018.04.007"
+        },
+        {
+          "key": "24271_CR45",
+          "unstructured": "Johnson, A. E., Pollard, T. J. & Mark, R. G. Reproducibility in critical care: a mortality prediction case study. In Machine Learning for Healthcare Conference, 361–376 (2017)."
+        },
+        {
+          "key": "24271_CR46",
+          "unstructured": "Luo, Y.-F. & Rumshisky, A. Interpretable topic features for post-icu mortality prediction. In AMIA Annual Symposium Proceedings, 827 (2016)."
+        }
+      ],
+      "container-title": [
+        "Scientific Reports"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41598-018-24271-9.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41598-018-24271-9",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41598-018-24271-9.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            20
+          ]
+        ],
+        "date-time": "2022-12-20T23:28:24Z",
+        "timestamp": 1671578904000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s41598-018-24271-9"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            17
+          ]
+        ]
+      },
+      "references-count": 46,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2018,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "24271"
+      ],
+      "URL": "https://doi.org/10.1038/s41598-018-24271-9",
+      "relation": {},
+      "ISSN": [
+        "2045-2322"
+      ],
+      "issn-type": [
+        {
+          "value": "2045-2322",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            17
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "1 November 2017",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "26 March 2018",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "17 April 2018",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "The authors declare no competing interests.",
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Competing Interests"
+          }
+        }
+      ],
+      "article-number": "6085"
+    },
+    "bib": "@article{grud2018,\n author={Zhengping Che and Sanjay Purushotham and Kyunghyun Cho and David Sontag and Yan Liu},\n title={Recurrent Neural Networks for Multivariate Time Series with Missing Values},\n year={2018}, journal={Scientific Reports}, doi={10.1038/s41598-018-24271-9}, volume={8}, number={1}, pages={6085}}\n"
+  },
+  {
+    "key": "revin2022",
+    "title": "Reversible Instance Normalization for Accurate Time-Series Forecasting against Distribution Shift",
+    "url": "https://openreview.net/forum?id=cGDAkQo1C0p",
+    "bib": "@inproceedings{revin2022,\n author={Taesung Kim and Jinhee Kim and Yunwon Tae and Cheonbok Park and Jang-Ho Choi and Jaegul Choo},\n title={Reversible Instance Normalization for Accurate Time-Series Forecasting against Distribution Shift},\n booktitle={International Conference on Learning Representations}, year={2022},\n url={https://openreview.net/forum?id=cGDAkQo1C0p}}"
+  }
+]
